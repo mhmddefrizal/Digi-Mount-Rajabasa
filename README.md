@@ -51,19 +51,6 @@ Aplikasi ini dibuat untuk:
 
 ---
 
-## 📁 Struktur Project
-
-Digi-Mount-Rajabasa/
-│
-├── api/ # Backend (NestJS Microservices)
-├── cms/ # Admin Dashboard (Next.js)
-├── user/ # Mobile App (React Native)
-├── dokumentasi/ # Dokumentasi project
-│
-└── README.md
-
----
-
 ## 🧱 Arsitektur Sistem
 
 Menggunakan konsep **Microservice Architecture**:
