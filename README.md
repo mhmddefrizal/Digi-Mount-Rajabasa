@@ -78,9 +78,9 @@ Menggunakan konsep **Microservice Architecture**:
 
 ## 👥 Tim Pengembang
 
-- Muhammad Defrizal → Backend Developer
-- Oka Rivaldo → Frontend CMS
-- (Nama anggota) → Frontend Mobile
+- Muhammad Defrizal → Backend
+- Rivaldo Azwir → Frontend CMS
+- Oka Windana Saputra → Frontend End User
 
 ---
 
