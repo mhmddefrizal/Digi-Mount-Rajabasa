@@ -11,3 +11,11 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Jalur {
+  id          String      @id @default(uuid())
+  nama        String
+  deskripsi   String?
+  tingkatKesulitan String
+  createdAt   DateTime    @default(now())
+}
