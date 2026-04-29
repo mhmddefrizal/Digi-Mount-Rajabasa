@@ -1,6 +1,5 @@
-import { Text } from "@react-navigation/elements";
 import React from "react";
-import { View } from "react-native-reanimated/lib/typescript/Animated";
+import { View, Text } from "react-native";
 
 export default function Login() {
   return (
