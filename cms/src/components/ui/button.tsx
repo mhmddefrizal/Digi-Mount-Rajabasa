@@ -16,4 +16,21 @@ export default function Button({
     children,
     className = "",
     ...props
-}: ButtonProps) {}
+}: ButtonProps) {
+    return (
+        // menggabungkan kelas CSS berdasarkan variant, fullWidth, dan className tambahan yang diterima dari props
+        <button
+            className={[
+                styles.btn,
+                styles[variant],
+                fullWidth ? styles.fullWidth : "",
+                className,
+            ]
+                .filter(Boolean)
+                .join(" ")}
+            {...props}
+        >
+            {children}
+        </button>
+    );
+}
