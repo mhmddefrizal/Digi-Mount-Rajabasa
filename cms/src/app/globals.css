@@ -18,6 +18,11 @@
   --text-secondary: #6B6B6B;
   --text-muted: #9A9A9A;
 
+  /* Border */
+  --border: #E5E5E5;
+  --border-focus: #F07A20;
+  --input-bg: #F7F7F7;
+
   --background: #ffffff;
   --foreground: #171717;
 }
