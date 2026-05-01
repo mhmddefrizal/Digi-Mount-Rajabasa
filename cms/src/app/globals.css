@@ -29,9 +29,16 @@
   /* Fonts */
   --font-display: 'Barlow Condensed', sans-serif;
   --font-body: 'DM Sans', sans-serif;
-  
-  --background: #ffffff;
-  --foreground: #171717;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadow */
+  --shadow-input: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-button: 0 2px 8px rgba(240, 122, 32, 0.25);
+
 }
 
 @theme inline {
