@@ -63,6 +63,11 @@
   /* Fonts */
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
+
+  /* Radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
 }
 
 @media (prefers-color-scheme: dark) {
