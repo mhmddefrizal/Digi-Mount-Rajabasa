@@ -12,4 +12,17 @@ export async function loginAction(data: LoginFormData): Promise<AuthResponse> {
             message: "Username and password are required.",
         };
     }
+
+    // simulasi proses login, dalam implementasi nyata, Anda akan melakukan request ke server untuk memverifikasi kredensial
+    if (username === "demo@summitlog.com" && password === "summit123") {
+    return {
+      success: true,
+      redirectTo: "/dashboard",
+    };
+  }
+//   jika kredensial tidak valid, kembalikan response dengan success false dan pesan error
+  return {
+    success: false,
+    message: "Username atau password tidak valid.",
+  };
 }
