@@ -42,10 +42,10 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* pengaturan warna */
+  --color-primary: var(--summit-orange);
+  --color-primary-light: var(--summit-orange-light);
+  --color-primary-dim: var(--summit-orange-dim);
 }
 
 @media (prefers-color-scheme: dark) {
