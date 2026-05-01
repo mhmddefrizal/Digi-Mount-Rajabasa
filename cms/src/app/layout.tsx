@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed } from "next/font/google";
+import { Barlow_Condensed, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 // perubahan font, sebelumnya menggunakan Inter, sekarang menggunakan Barlow Condensed
@@ -7,6 +7,12 @@ const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow",
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
