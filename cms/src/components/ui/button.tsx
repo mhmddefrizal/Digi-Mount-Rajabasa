@@ -8,3 +8,12 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     fullWidth?: boolean;
     children: React.ReactNode;
 }
+
+// komponen Button yang menerima props sesuai dengan ButtonProps, dengan default variant "primary" dan fullWidth false
+export default function Button({
+    variant = "primary",
+    fullWidth = false,
+    children,
+    className = "",
+    ...props
+}: ButtonProps) {}
