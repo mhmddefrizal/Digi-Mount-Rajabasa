@@ -46,6 +46,10 @@
   --color-primary: var(--summit-orange);
   --color-primary-light: var(--summit-orange-light);
   --color-primary-dim: var(--summit-orange-dim);
+
+  /* pengaturan background */
+  --color-background: var(--bg-white);
+  --color-panel: var(--bg-panel);
 }
 
 @media (prefers-color-scheme: dark) {
