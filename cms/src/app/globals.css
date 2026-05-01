@@ -23,8 +23,13 @@
   --border-focus: #F07A20;
   --input-bg: #F7F7F7;
 
+  /* Hero */
   --hero-overlay: rgba(0, 0, 0, 0.45);
 
+  /* Fonts */
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  
   --background: #ffffff;
   --foreground: #171717;
 }
