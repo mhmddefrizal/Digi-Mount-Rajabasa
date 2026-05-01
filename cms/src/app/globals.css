@@ -13,6 +13,11 @@
   --bg-white: #FFFFFF;
   --bg-panel: #FAFAFA;
 
+  /* Text */
+  --text-primary: #111111;
+  --text-secondary: #6B6B6B;
+  --text-muted: #9A9A9A;
+
   --background: #ffffff;
   --foreground: #171717;
 }
