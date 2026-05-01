@@ -50,6 +50,11 @@
   /* pengaturan background */
   --color-background: var(--bg-white);
   --color-panel: var(--bg-panel);
+
+  /* pengaturan text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
 }
 
 @media (prefers-color-scheme: dark) {
