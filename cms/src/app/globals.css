@@ -9,6 +9,10 @@
   --summit-orange-light: #F59A4A;
   --summit-orange-dim: rgba(240, 122, 32, 0.15);
 
+  /* Background */
+  --bg-white: #FFFFFF;
+  --bg-panel: #FAFAFA;
+
   --background: #ffffff;
   --foreground: #171717;
 }
