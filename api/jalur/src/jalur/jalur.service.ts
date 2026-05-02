@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { ConflictException, Injectable } from '@nestjs/common';
 import { CreateJalurDto } from './dto/create-jalur.dto';
 import { UpdateJalurDto } from './dto/update-jalur.dto';
 import { PrismaService } from '../prisma.service';
@@ -12,30 +12,24 @@ export class JalurService {
   async create(data: CreateJalurDto) {
     // return this.prisma.jalur.create({
     //   data,
-    // });
+    // }); {
+    const existingJalur = await this.prisma.jalur.findFirst({
+      where: { nama: data.nama },
+    });
 
-    try {
-      const existingJalur = await this.prisma.jalur.findFirst({
-        where: { nama: data.nama },
-      });
-
-      if (existingJalur) {
-        throw new BadRequestException('Jalur dengan nama yang sama sudah ada!');
-      }
-
-      const result = await this.prisma.jalur.create({
-        data,
-      });
-
-      return {
-        success: true,
-        message: 'Jalur berhasil dibuat',
-        data: result,
-      };
-    } catch (error) {
-      console.error(error);
-      throw error;
+    if (existingJalur) {
+      throw new ConflictException('Jalur dengan nama yang sama sudah ada!');
     }
+
+    const result = await this.prisma.jalur.create({
+      data,
+    });
+
+    return {
+      success: true,
+      message: 'Jalur berhasil dibuat',
+      data: result,
+    };
   }
 
   findAll() {
