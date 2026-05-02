@@ -13,18 +13,23 @@ export class JalurService {
     // return this.prisma.jalur.create({
     //   data,
     // }); {
+
+    // cek apakah nama jalur sudah ada
     const existingJalur = await this.prisma.jalur.findFirst({
       where: { nama: data.nama },
     });
 
+    // jika sudah ada, throw conflict exception
     if (existingJalur) {
       throw new ConflictException('Jalur dengan nama yang sama sudah ada!');
     }
 
+    // jika belum ada, buat jalur baru
     const result = await this.prisma.jalur.create({
       data,
     });
 
+    // return response dengan format success, message, dan data
     return {
       success: true,
       message: 'Jalur berhasil dibuat',
