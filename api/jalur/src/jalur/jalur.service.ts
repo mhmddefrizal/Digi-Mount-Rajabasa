@@ -7,23 +7,32 @@ import { PrismaService } from '../prisma.service';
 export class JalurService {
   // buat constructor untuk inject prisma service
   constructor(private readonly prisma: PrismaService) {}
-  create(createJalurDto: CreateJalurDto) {
-    return 'This action adds a new jalur';
+  create(data: CreateJalurDto) {
+    return this.prisma.jalur.create({
+      data,
+    });
   }
 
   findAll() {
-    return `This action returns all jalur`;
+    return this.prisma.jalur.findMany();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} jalur`;
+  findOne(id: string) {
+    return this.prisma.jalur.findUnique({
+      where: { id },
+    });
   }
 
-  update(id: number, updateJalurDto: UpdateJalurDto) {
-    return `This action updates a #${id} jalur`;
+  update(id: string, updateJalurDto: UpdateJalurDto) {
+    return this.prisma.jalur.update({
+      where: { id },
+      data: updateJalurDto,
+    });
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} jalur`;
+  remove(id: string) {
+    return this.prisma.jalur.delete({
+      where: { id },
+    });
   }
 }
