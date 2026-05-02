@@ -27,16 +27,16 @@ export class JalurController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.jalurService.findOne(+id);
+    return this.jalurService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateJalurDto: UpdateJalurDto) {
-    return this.jalurService.update(+id, updateJalurDto);
+    return this.jalurService.update(id, updateJalurDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.jalurService.remove(+id);
+    return this.jalurService.remove(id);
   }
 }
