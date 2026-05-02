@@ -1,9 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { CreateJalurDto } from './dto/create-jalur.dto';
 import { UpdateJalurDto } from './dto/update-jalur.dto';
+import { PrismaService } from '../prisma.service';
 
 @Injectable()
 export class JalurService {
+  // buat constructor untuk inject prisma service
+  constructor(private readonly prisma: PrismaService) {}
   create(createJalurDto: CreateJalurDto) {
     return 'This action adds a new jalur';
   }

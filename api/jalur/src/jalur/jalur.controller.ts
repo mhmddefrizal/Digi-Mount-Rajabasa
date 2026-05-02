@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { JalurService } from './jalur.service';
 import { CreateJalurDto } from './dto/create-jalur.dto';
 import { UpdateJalurDto } from './dto/update-jalur.dto';
