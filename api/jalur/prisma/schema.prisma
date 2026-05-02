@@ -14,7 +14,7 @@ datasource db {
 
 model Jalur {
   id          String      @id @default(uuid())
-  nama        String
+  nama        String      @unique
   deskripsi   String?
   tingkatKesulitan String
   createdAt   DateTime    @default(now())

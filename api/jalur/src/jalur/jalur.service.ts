@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateJalurDto } from './dto/create-jalur.dto';
 import { UpdateJalurDto } from './dto/update-jalur.dto';
 import { PrismaService } from '../prisma.service';
@@ -7,10 +7,35 @@ import { PrismaService } from '../prisma.service';
 export class JalurService {
   // buat constructor untuk inject prisma service
   constructor(private readonly prisma: PrismaService) {}
-  create(data: CreateJalurDto) {
-    return this.prisma.jalur.create({
-      data,
-    });
+
+  // buat fungsi untuk create data jalur
+  async create(data: CreateJalurDto) {
+    // return this.prisma.jalur.create({
+    //   data,
+    // });
+
+    try {
+      const existingJalur = await this.prisma.jalur.findFirst({
+        where: { nama: data.nama },
+      });
+
+      if (existingJalur) {
+        throw new BadRequestException('Jalur dengan nama yang sama sudah ada!');
+      }
+
+      const result = await this.prisma.jalur.create({
+        data,
+      });
+
+      return {
+        success: true,
+        message: 'Jalur berhasil dibuat',
+        data: result,
+      };
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
   }
 
   findAll() {
