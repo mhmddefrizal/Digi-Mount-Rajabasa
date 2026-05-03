@@ -3,6 +3,11 @@ import LoginForm from "@/components/auth/LoginForm";
 
 export default function LoginPage() {
     return (
-        <LoginForm />
+        // section untuk menampilkan form login dengan header
+        <section>
+            <header className="mb-10">
+
+            </header>
+        </section>
     );
 }
