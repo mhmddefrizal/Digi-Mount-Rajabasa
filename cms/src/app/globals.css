@@ -1,6 +1,4 @@
 @import "tailwindcss";
-/* import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap");
 
 :root {
   /* Warna */
@@ -78,4 +76,9 @@
 
 body {
   @apply bg-background text-text-primary font-sans;
+}
+
+/* Heading pakai display font */
+h1, h2, h3 {
+  font-family: var(--font-display);
 }
