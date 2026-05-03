@@ -35,6 +35,21 @@ export default function AuthHero() {
             mountain operations with technical precision.
           </p>
         </div>
+        {/* Bottom stats */}
+        <footer className="flex gap-10 text-sm">
+          <div>
+            <p className="text-primary">PEAKS</p>
+            <p>8,848m</p>
+          </div>
+          <div>
+            <p className="text-primary">ACTIVE</p>
+            <p>124</p>
+          </div>
+          <div>
+            <p className="text-primary">STATUS</p>
+            <p>SECURE</p>
+          </div>
+        </footer>
       </article>
     </section>
   );
