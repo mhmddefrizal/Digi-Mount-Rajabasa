@@ -82,3 +82,8 @@ body {
 h1, h2, h3 {
   font-family: var(--font-display);
 }
+
+/* Overlay untuk gambar kiri login */
+.hero-overlay {
+  background: var(--hero-overlay);
+}
