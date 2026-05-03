@@ -3,6 +3,7 @@
 import { Eye } from "lucide-react";
 import { Input } from "../ui/input";
 import { Checkbox } from "../ui/checkbox";
+import { Button } from "../ui/button";
 
 // komponen form login yang akan digunakan di halaman login
 export default function LoginForm() {
@@ -45,6 +46,11 @@ export default function LoginForm() {
         <Checkbox id="remember" />
         <label htmlFor="remember">Keep me logged in for this session</label>
       </div>
+
+      {/* Login Button */}
+      <Button className="w-full bg-primary text-white hover:bg-primary-light">
+        Log In
+      </Button>
     </form>
   );
 }
