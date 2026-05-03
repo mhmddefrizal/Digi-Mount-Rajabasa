@@ -16,6 +16,18 @@ export default function LoginForm() {
           className="bg-input border-border focus-visible:ring-primary"
         />
       </div>
+
+        {/* Untuk input password */}
+      <div className="space-y-2">
+        <div className="flex justify-between items-center">
+          <label className="text-sm font-medium text-text-secondary uppercase tracking-wide">
+            Security Clearance
+          </label>
+          <button type="button" className="text-sm text-primary font-medium">
+            Forgot?
+          </button>
+        </div>
+      </div>
     </form>
   );
 }
