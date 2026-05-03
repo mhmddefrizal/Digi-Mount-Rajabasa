@@ -6,8 +6,10 @@ export default function AuthHero() {
     // bagian hero yang hanya tampil pada layar besar (lg) dan memiliki gambar latar belakang gunung yang menarik
     <section className="relative hidden lg:flex w-1/2 h-screen text-white">
       <Image
-        src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=https://unsplash.com/photos/ice-capped-mountain-at-daytime-xfngap_DToEeyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
+        src="/Mountain.jpg"
         alt="Mountain Background"
+        fill
+        priority
         className="absolute inset-0 w-full h-full object-cover"
       />
 
