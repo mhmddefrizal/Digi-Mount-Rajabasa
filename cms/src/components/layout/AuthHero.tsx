@@ -15,7 +15,16 @@ export default function AuthHero() {
       <div className="absolute inset-0 hero-overlay" />
 
       {/* Content */}
-      <article className="relative z-10 flex flex-col justify-between p-10 w-full"></article>
+      <article className="relative z-10 flex flex-col justify-between p-10 w-full">
+        {/* Logo */}
+        <header className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-primary rounded-md flex items-center justify-center text-white font-bold">
+            ⛰
+          </div>
+          <span className="font-display tracking-wide text-lg">DigiMount Rajabasa</span>
+        </header>
+        
+      </article>
     </section>
   );
 }
