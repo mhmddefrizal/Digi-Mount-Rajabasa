@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, DM_Sans } from "next/font/google";
+import { Barlow_Condensed, DM_Sans, Geist } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 
 // perubahan font, sebelumnya menggunakan Inter, sekarang menggunakan Barlow Condensed
 const barlowCondensed = Barlow_Condensed({
@@ -30,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${barlowCondensed.variable} ${dmSans.variable}`}
+      className={cn(barlowCondensed.variable, dmSans.variable, "font-sans", geist.variable)}
     >
       <body>{children}</body>
     </html>
