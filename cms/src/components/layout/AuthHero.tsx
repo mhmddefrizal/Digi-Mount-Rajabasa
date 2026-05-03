@@ -21,9 +21,20 @@ export default function AuthHero() {
           <div className="w-10 h-10 bg-primary rounded-md flex items-center justify-center text-white font-bold">
             ⛰
           </div>
-          <span className="font-display tracking-wide text-lg">DigiMount Rajabasa</span>
+          <span className="font-display tracking-wide text-lg">
+            DigiMount Rajabasa
+          </span>
         </header>
-        
+        {/* Middle text */}
+        <div className="max-w-md">
+          <h1 className="text-lg font-semibold mb-2">
+            Peak performance starts with precise logistics.
+          </h1>
+          <p className="text-sm text-white/80">
+            Manage expeditions, track climber safety, and coordinate complex
+            mountain operations with technical precision.
+          </p>
+        </div>
       </article>
     </section>
   );
