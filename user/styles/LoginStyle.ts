@@ -13,6 +13,13 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 30,
   },
+   input: {
+    borderWidth: 1,
+    borderColor: "#ccc",
+    padding: 10,
+    marginBottom: 10,
+    borderRadius: 8,
+  },
 });
 
 export default styles;
