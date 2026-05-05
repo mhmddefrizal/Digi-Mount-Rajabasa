@@ -1,6 +1,6 @@
 import styles from "@/styles/LoginStyle";
 import React, { useState } from "react";
-import { View, Text } from "react-native";
+import { View, Text, TextInput } from "react-native";
 
 export default function Login() {
   //state untuk menyimpan username
