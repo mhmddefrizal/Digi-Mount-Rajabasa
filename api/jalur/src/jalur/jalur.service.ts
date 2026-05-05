@@ -75,11 +75,29 @@ export class JalurService {
     };
   }
 
-  update(id: string, updateJalurDto: UpdateJalurDto) {
-    return this.prisma.jalur.update({
+  async update(id: string, data: UpdateJalurDto) {
+    // return this.prisma.jalur.update({
+    //   where: { id },
+    //   data: updateJalurDto,
+    // });
+    const existing = await this.prisma.jalur.findUnique({
       where: { id },
-      data: updateJalurDto,
     });
+
+    if (!existing) {
+      throw new NotFoundException('Data Jalur tidak ditemukan!');
+    }
+
+    const result = await this.prisma.jalur.update({
+      where: { id },
+      data,
+    });
+
+    return {
+      success: true,
+      message: 'Jalur berhasil diperbarui',
+      data: result,
+    };
   }
 
   remove(id: string) {
