@@ -8,7 +8,7 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
-      <Text>Login</Text>
+      <Text style={styles.title}>Login</Text>
     </View>
   );
 }
