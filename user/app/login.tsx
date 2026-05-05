@@ -24,7 +24,7 @@ export default function Login() {
         style={styles.input}
       />
         <View style={styles.Button}>
-        <Text style={styles.ButtonText}>Login</Text>
+        <Text style={styles.Button}>Login</Text>
       </View>
     </View>
   );
