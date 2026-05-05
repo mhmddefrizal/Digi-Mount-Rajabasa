@@ -23,6 +23,9 @@ export default function Login() {
         secureTextEntry
         style={styles.input}
       />
+        <View style={styles.Button}>
+        <Text style={styles.ButtonText}>Login</Text>
+      </View>
     </View>
   );
 }
