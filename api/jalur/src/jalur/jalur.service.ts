@@ -56,10 +56,23 @@ export class JalurService {
     };
   }
 
-  findOne(id: string) {
-    return this.prisma.jalur.findUnique({
+  async findOne(id: string) {
+    // return this.prisma.jalur.findUnique({
+    //   where: { id },
+    // });
+
+    const data = await this.prisma.jalur.findUnique({
       where: { id },
     });
+
+    if (!data) {
+      throw new NotFoundException('Data Jalur tidak ditemukan!');
+    }
+
+    return {
+      success: true,
+      data,
+    };
   }
 
   update(id: string, updateJalurDto: UpdateJalurDto) {
