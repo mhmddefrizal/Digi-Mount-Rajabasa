@@ -16,6 +16,13 @@ export default function Login() {
         onChangeText={setUsername}
         style={styles.input}
       />
+      <TextInput
+        placeholder="Password"
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry
+        style={styles.input}
+      />
     </View>
   );
 }
