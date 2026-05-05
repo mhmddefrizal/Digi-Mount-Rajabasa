@@ -7,7 +7,7 @@ export default function Login() {
    const [password, setPassword] = useState("");
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Login</Text>
     </View>
   );
