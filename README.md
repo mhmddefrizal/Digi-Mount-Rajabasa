@@ -1,6 +1,6 @@
-# 🚀 Digi-Mount Rajabasa
+# 🌄 Digi-Mount Rajabasa
 
-Sistem registrasi pendakian Gunung Rajabasa berbasis rombongan yang memungkinkan pendataan anggota, validasi keselamatan, pencatatan logistik, perhitungan biaya, serta penyediaan tiket digital sederhana sebagai bukti pendakian.
+Digi-Mount Rajabasa adalah aplikasi registrasi pendakian Gunung Rajabasa berbasis rombongan yang menggantikan pencatatan manual menjadi sistem digital yang lebih terstruktur dan efisien. Aplikasi ini memungkinkan ketua rombongan mendaftarkan pendakian, menginput anggota, memilih jalur, serta melakukan validasi keselamatan dan perhitungan biaya secara otomatis.
 
 ---
 
