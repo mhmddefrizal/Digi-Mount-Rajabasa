@@ -1,4 +1,8 @@
-import { ConflictException, Injectable } from '@nestjs/common';
+import {
+  ConflictException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { CreateJalurDto } from './dto/create-jalur.dto';
 import { UpdateJalurDto } from './dto/update-jalur.dto';
 import { PrismaService } from '../prisma.service';
@@ -37,8 +41,19 @@ export class JalurService {
     };
   }
 
-  findAll() {
-    return this.prisma.jalur.findMany();
+  async findAll() {
+    // return this.prisma.jalur.findMany();
+    const data = await this.prisma.jalur.findMany();
+
+    if (data.length === 0) {
+      throw new NotFoundException('Data Jalur tidak ditemukan!');
+    }
+
+    return {
+      success: true,
+      total: data.length,
+      data,
+    };
   }
 
   findOne(id: string) {
