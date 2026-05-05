@@ -1,3 +1,4 @@
+import styles from "@/styles/LoginStyle";
 import React, { useState } from "react";
 import { View, Text } from "react-native";
 
