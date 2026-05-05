@@ -1,9 +1,9 @@
-import { StyleSheet } from "react-native";
+import { Button, StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#f5f5f5',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -18,6 +18,11 @@ export const styles = StyleSheet.create({
     borderColor: "#ccc",
     padding: 10,
     marginBottom: 10,
+    borderRadius: 8,
+  },
+  Button: {
+    backgroundColor: "#007BFF",
+    padding: 10,
     borderRadius: 8,
   },
 });
