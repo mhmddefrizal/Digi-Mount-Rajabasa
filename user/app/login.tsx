@@ -9,14 +9,13 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login
-        <TextInput
+      <Text style={styles.title}>Login</Text>
+      <TextInput
         placeholder="Username"
         value={username}
         onChangeText={setUsername}
         style={styles.input}
       />
-      </Text>
     </View>
   );
 }
