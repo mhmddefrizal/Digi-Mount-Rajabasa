@@ -25,7 +25,7 @@ Aplikasi ini dibuat untuk:
 - 🎒 Input logistik (opsional upload foto)
 - 🗑️ Input sampah setelah pendakian
 - 💰 Perhitungan biaya otomatis
-- 🎟️ Tiket digital sederhana
+- 📄 Bukti pendaftaran digital
 - 📋 Riwayat pendaftaran
 
 ---
@@ -37,6 +37,7 @@ Aplikasi ini dibuat untuk:
 - NestJS (Microservice Architecture)
 - Prisma ORM
 - PostgreSQL
+- RESTful API
 
 ### Frontend CMS
 
