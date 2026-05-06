@@ -1,4 +1,8 @@
-import { ConflictException, Injectable } from '@nestjs/common';
+import {
+  ConflictException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { CreateJalurDto } from './dto/create-jalur.dto';
 import { UpdateJalurDto } from './dto/update-jalur.dto';
 import { PrismaService } from '../prisma.service';
@@ -37,26 +41,99 @@ export class JalurService {
     };
   }
 
-  findAll() {
-    return this.prisma.jalur.findMany();
+  async findAll() {
+    // return this.prisma.jalur.findMany();
+    const data = await this.prisma.jalur.findMany();
+
+    // cek apakah data kosong
+    if (data.length === 0) {
+      throw new NotFoundException('Data Jalur tidak ditemukan!');
+    }
+
+    // return response dengan format success, total, dan data
+    return {
+      success: true,
+      total: data.length,
+      data,
+    };
   }
 
-  findOne(id: string) {
-    return this.prisma.jalur.findUnique({
+  async findOne(id: string) {
+    // return this.prisma.jalur.findUnique({
+    //   where: { id },
+    // });
+
+    // cari data jalur berdasarkan id
+    const data = await this.prisma.jalur.findUnique({
       where: { id },
     });
+
+    // cek apakah data ditemukan
+    if (!data) {
+      throw new NotFoundException('Data Jalur tidak ditemukan!');
+    }
+
+    // return response dengan format success dan data
+    return {
+      success: true,
+      data,
+    };
   }
 
-  update(id: string, updateJalurDto: UpdateJalurDto) {
-    return this.prisma.jalur.update({
+  async update(id: string, data: UpdateJalurDto) {
+    // return this.prisma.jalur.update({
+    //   where: { id },
+    //   data: updateJalurDto,
+    // });
+
+    // cari data jalur berdasarkan id
+    const existing = await this.prisma.jalur.findUnique({
       where: { id },
-      data: updateJalurDto,
     });
+
+    // cek apakah data ditemukan
+    if (!existing) {
+      throw new NotFoundException('Data Jalur tidak ditemukan!');
+    }
+
+    // update data jalur berdasarkan id
+    const result = await this.prisma.jalur.update({
+      where: { id },
+      data,
+    });
+
+    // return response dengan format success, message, dan data
+    return {
+      success: true,
+      message: 'Jalur berhasil diperbarui',
+      data: result,
+    };
   }
 
-  remove(id: string) {
-    return this.prisma.jalur.delete({
+  async remove(id: string) {
+    // return this.prisma.jalur.delete({
+    //   where: { id },
+    // });
+    // cari data jalur berdasarkan id
+    const existing = await this.prisma.jalur.findUnique({
       where: { id },
     });
+
+    // cek apakah data ditemukan
+    if (!existing) {
+      throw new NotFoundException('Data Jalur tidak ditemukan!');
+    }
+
+    // hapus data jalur berdasarkan id
+    const result = await this.prisma.jalur.delete({
+      where: { id },
+    });
+
+    // return response dengan format success, message, dan data
+    return {
+      success: true,
+      message: 'Jalur berhasil dihapus',
+      data: result,
+    };
   }
 }
