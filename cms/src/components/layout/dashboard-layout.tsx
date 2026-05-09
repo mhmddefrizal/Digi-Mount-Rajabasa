@@ -12,5 +12,9 @@ export default function DashboardLayout({
   children,
 }: Props) {
   return (
+    <main className="flex min-h-screen bg-background">
+        {/* Sidebar */}
+        <DashboardSidebar />
+    </main>
   )
 }
