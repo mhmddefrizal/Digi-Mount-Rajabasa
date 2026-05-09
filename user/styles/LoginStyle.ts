@@ -2,11 +2,9 @@ import { Button, StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#f5f5f5',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
+    flex: 1,
+    backgroundColor: '#EDEDE6',
+  },
     loginBox: {
   backgroundColor: '#1B4332',
   padding: 75,

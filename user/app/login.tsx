@@ -9,6 +9,7 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
+      <Text style="">Login Screen</Text>
       <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
       <TextInput
