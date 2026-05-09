@@ -69,6 +69,11 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     marginVertical: 30,
   },
+  line: {
+    flex: 1,
+    height: 1,
+    backgroundColor: "#CFCFCF",
+  },
 
   Button: {
     backgroundColor: "#007BFF",
