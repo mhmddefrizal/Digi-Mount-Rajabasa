@@ -42,16 +42,23 @@ export class JalurService {
     return response.data;
   }
 
+  // buat fungsi update yang menerima parameter id dengan tipe string dan updateJalurDto dengan tipe UpdateJalurDto, serta mengembalikan Promise<Jalur>
   async update(id: string, updateJalurDto: UpdateJalurDto): Promise<Jalur> {
     // return `This action updates a #${id} jalur`;
+    // buat request ke microservice jalur untuk mengupdate data jalur berdasarkan id dan data yang diberikan
     const response = await jalur_api.patch<Jalur>(`/${id}`, updateJalurDto);
 
+    // kembalikan data jalur yang sudah diupdate
     return response.data;
   }
 
+  // buat fungsi remove yang menerima parameter id dengan tipe string dan mengembalikan Promise<Jalur>
   async remove(id: string): Promise<Jalur> {
     // return `This action removes a #${id} jalur`;
+    // buat request ke microservice jalur untuk menghapus data jalur berdasarkan id
     const response = await jalur_api.delete<Jalur>(`/${id}`);
+
+    // kembalikan data jalur yang sudah dihapus
     return response.data;
   }
 }
