@@ -39,7 +39,9 @@ export class JalurService {
     return response.data;
   }
 
-  remove(id: string) {
+  async remove(id: string): Promise<Jalur> {
     // return `This action removes a #${id} jalur`;
+    const response = await jalur_api.delete<Jalur>(`/${id}`);
+    return response.data;
   }
 }
