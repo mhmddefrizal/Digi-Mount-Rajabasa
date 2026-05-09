@@ -14,9 +14,9 @@ export interface Jalur {
 }
 @Injectable()
 export class JalurService {
-  async create(createJalurDto: CreateJalurDto) {
+  async create(createJalurDto: CreateJalurDto): Promise<Jalur> {
     // return 'This action adds a new jalur';
-    const response = await jalur_api.post('/', createJalurDto);
+    const response = await jalur_api.post<Jalur>('/', createJalurDto);
     return response.data;
   }
 
