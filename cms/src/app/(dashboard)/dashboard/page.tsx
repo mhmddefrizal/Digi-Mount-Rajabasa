@@ -1,3 +1,6 @@
+import RegistrationQueue from "@/components/dashboard/registrationqueue";
+import TrafficChart from "@/components/dashboard/trafficchart";
+
 // page halaman dashboard
 export default function DashboardPage() {
    return (
@@ -18,9 +21,14 @@ export default function DashboardPage() {
 
          {/* Content */}
          <section className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+            {/* article untuk menampilkan grafik traffic */}
             <article className="xl:col-span-2">
-                {/* <TrafficChart /> */}
+                <TrafficChart />
             </article>
+            {/* aside untuk menampilkan antrian pendaftaran */}
+            <aside>
+                <RegistrationQueue />
+            </aside>
          </section>
       </main>
    );
