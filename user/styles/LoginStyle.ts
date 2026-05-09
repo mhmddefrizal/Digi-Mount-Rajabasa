@@ -64,6 +64,11 @@ export const styles = StyleSheet.create({
     color: "#1F3D36",
     fontWeight: "bold",
   },
+  dividerContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 30,
+  },
 
   Button: {
     backgroundColor: "#007BFF",
