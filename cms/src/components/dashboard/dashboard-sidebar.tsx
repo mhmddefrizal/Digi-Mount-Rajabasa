@@ -20,6 +20,13 @@ export default function DashboardSidebar() {
           </div>
         </div>
       </header>
+      <nav className="flex-1 px-3 py-6 space-y-2">
+        {/* bagian menu navigasi */}
+        <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
+          <LayoutDashboard className="w-5 h-5" />
+          Dashboard
+        </button>
+      </nav>
     </aside>
   );
 }
