@@ -48,6 +48,15 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
     borderRadius: 8,
   },
+  inputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#F5F5F5",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+
   label: {
     marginBottom: 8,
     color: "#1F3D36",
