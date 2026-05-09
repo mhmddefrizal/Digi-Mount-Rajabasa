@@ -47,6 +47,12 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
     borderRadius: 8,
   },
+  label: {
+    marginBottom: 8,
+    color: "#1F3D36",
+    fontWeight: "600",
+  },
+
   Button: {
     backgroundColor: "#007BFF",
     padding: 10,
