@@ -5,6 +5,12 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#EDEDE6',
   },
+  header: {
+    height: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5F5F2',
+  },
     loginBox: {
   backgroundColor: '#1B4332',
   padding: 75,
