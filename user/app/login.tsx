@@ -22,12 +22,8 @@ export default function Login() {
 
       <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
-      <TextInput
-        placeholder="Username"
-        value={username}
-        onChangeText={setUsername}
-        style={styles.input}
-      />
+      {/* Email */}
+        <Text style={styles.label}>Alamat Email</Text>
       <TextInput
         placeholder="Password"
         value={password}
