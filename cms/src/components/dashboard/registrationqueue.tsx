@@ -34,6 +34,25 @@ export default function RegistrationQueue() {
                     Registration Queue
                 </h2>
             </header>
+            {/* buat bagian untuk menampilkan daftar pendaftar yang sedang mengantri */}
+            <section className="space-y-6">
+                {queue.map((item, index) => (
+                    <article key={index} className="flex gap-4">
+                        <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                        <div>
+                            <h3 className="font-semibold">
+                                {item.name}
+                            </h3>
+                            <p className="text-sm text-text-secondary">
+                                {item.trail}
+                            </p>
+                            <p className="text-xs text-text-muted mt-1">
+                                {item.time}
+                            </p>
+                        </div>
+                    </article>
+                ))}
+            </section>
         </CardContent>
     </Card>
   )
