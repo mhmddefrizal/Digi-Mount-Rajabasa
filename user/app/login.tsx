@@ -9,7 +9,9 @@ export default function Login() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style="">Login Screen</Text>
+      <View style={styles.header}>
+        <Text style={styles.headerTitle}>Digi-Mount Rajabasa</Text>
+      </View>
       <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
       <TextInput
@@ -29,6 +31,7 @@ export default function Login() {
         <Text style={styles.Button}>Login</Text>
         </View>
       </View>
+      
     </SafeAreaView>
   );
 }
