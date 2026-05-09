@@ -7,11 +7,12 @@ export const styles = StyleSheet.create({
     padding: 20,
   },
   header: {
-    height: 60,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5F5F2',
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 50,
+    marginBottom: 30,
   },
+
   headerTitle: {
     fontSize: 18,
     fontWeight: 'bold',
