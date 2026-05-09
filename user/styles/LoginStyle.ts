@@ -28,14 +28,15 @@ export const styles = StyleSheet.create({
     elevation: 5,
   },
       title: {
-    fontSize: 28,
+    fontSize: 30,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 30,
+    color: "#1F3D36",
   },
   subtitle: {
     textAlign: "center",
-    color: "gray",
+    color: "#1F3D36",
     marginTop: 10,
     marginBottom: 30,
     lineHeight: 22,
