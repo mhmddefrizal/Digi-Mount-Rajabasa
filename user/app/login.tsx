@@ -43,6 +43,7 @@ export default function Login() {
             onChangeText={setPassword}
             style={styles.input}
           />
+          <Ionicons name="lock-closed-outline" size={20} color="gray" />
         </View>
         </View>
   
