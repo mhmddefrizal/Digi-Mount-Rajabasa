@@ -26,8 +26,10 @@ export class JalurService {
     return response.data;
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} jalur`;
+  async findOne(id: string): Promise<Jalur> {
+    const response = await jalur_api.get<Jalur>(`/${id}`);
+
+    return response.data;
   }
 
   update(id: number, updateJalurDto: UpdateJalurDto) {
