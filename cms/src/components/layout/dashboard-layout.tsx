@@ -15,6 +15,11 @@ export default function DashboardLayout({
     <main className="flex min-h-screen bg-background">
         {/* Sidebar */}
         <DashboardSidebar />
+
+        {/* Main Content */}
+        <section className="flex flex-1 flex-col">
+            
+        </section>
     </main>
   )
 }
