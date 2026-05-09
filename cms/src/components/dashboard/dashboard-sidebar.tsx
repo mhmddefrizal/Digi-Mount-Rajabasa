@@ -22,9 +22,15 @@ export default function DashboardSidebar() {
       </header>
       <nav className="flex-1 px-3 py-6 space-y-2">
         {/* bagian menu navigasi */}
+        {/* dashboard */}
         <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
           <LayoutDashboard className="w-5 h-5" />
           Dashboard
+        </button>
+        {/* registration */}
+        <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
+          <LayoutDashboard className="w-5 h-5" />
+          Registration
         </button>
       </nav>
     </aside>
