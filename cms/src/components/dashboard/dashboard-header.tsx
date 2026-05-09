@@ -1,5 +1,6 @@
-import { Search } from "lucide-react";
+import { Bell, Search, Settings } from "lucide-react";
 import { Input } from "../ui/input";
+import { Separator } from "../ui/separator";
 
 // dashboard header
 export default function DashboardHeader() {
@@ -13,6 +14,15 @@ export default function DashboardHeader() {
           placeholder="Search registrations, climbers, or permits..."
           className="pl-10 h-11 bg-panel border-border"
         />
+      </section>
+
+      <section className="flex items-center gap-5">
+        {/* icon bell untuk notifikasi */}
+        <Bell className="w-5 h-5 text-text-secondary" />
+        {/* icon settings */}
+        <Settings className="w-5 h-5 text-text-secondary" />
+        {/* separator */}
+        <Separator orientation="vertical" className="h-6" />
       </section>
     </header>
   );
