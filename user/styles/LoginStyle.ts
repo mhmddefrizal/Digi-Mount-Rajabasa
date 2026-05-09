@@ -7,6 +7,12 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    loginBox: {
+  backgroundColor: '#fff',
+  padding: 20,
+  borderRadius: 10,
+  marginTop: 100,
+},
       title: {
     fontSize: 28,
     fontWeight: "bold",
