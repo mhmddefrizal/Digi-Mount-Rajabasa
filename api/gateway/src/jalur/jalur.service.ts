@@ -14,12 +14,16 @@ export interface Jalur {
 }
 @Injectable()
 export class JalurService {
+  // buat fungsi create yang menerima parameter createJalurDto dengan tipe CreateJalurDto dan mengembalikan Promise<Jalur>
   async create(createJalurDto: CreateJalurDto): Promise<Jalur> {
     // return 'This action adds a new jalur';
+    // lakukan request ke microservice jalur untuk membuat data jalur baru
     const response = await jalur_api.post<Jalur>('/', createJalurDto);
+    // kembalikan data jalur yang baru dibuat
     return response.data;
   }
 
+  // buat fungsi findAll yang mengembalikan Promise<Jalur[]>
   async findAll(): Promise<Jalur[]> {
     const response = await jalur_api.get<Jalur[]>('/');
 
