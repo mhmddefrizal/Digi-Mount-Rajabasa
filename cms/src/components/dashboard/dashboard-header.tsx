@@ -1,6 +1,7 @@
 import { Bell, Search, Settings } from "lucide-react";
 import { Input } from "../ui/input";
 import { Separator } from "../ui/separator";
+import { Avatar, AvatarFallback } from "../ui/avatar";
 
 // dashboard header
 export default function DashboardHeader() {
@@ -26,11 +27,16 @@ export default function DashboardHeader() {
 
         {/* bagian admin */}
         <div className="flex items-center gap-3">
-            <div className="text-right">
-                <p className="font-medium">
-                    Admin DigiMount Rajabasa
-                </p>
-            </div>
+          <div className="text-right">
+            <p className="font-medium">Admin DigiMount Rajabasa</p>
+            <p className="text-xs text-text-muted">Super Admin Rajabasa</p>
+          </div>
+          {/* bagian avatar */}
+          <Avatar>
+            <AvatarFallback className="bg-primary text-white">
+              SR
+            </AvatarFallback>
+          </Avatar>
         </div>
       </section>
     </header>
