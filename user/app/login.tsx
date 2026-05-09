@@ -24,18 +24,15 @@ export default function Login() {
       <Text style={styles.title}>Login</Text>
       {/* Email */}
         <Text style={styles.label}>Alamat Email</Text>
-      <TextInput
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-        style={styles.input}
-      />
-        <View style={styles.Button}>
-        <Text style={styles.Button}>Login</Text>
+        <View style={styles.inputContainer}>
+          <TextInput
+            placeholder="name@email.com"
+            value={email}
+            onChangeText={setEmail}
+            style={styles.input}
+          />
         </View>
-      </View>
-      
+  
     </View>
   );
 }
