@@ -45,6 +45,12 @@ export default function Login() {
           />
           <Ionicons name="lock-closed-outline" size={20} color="gray" />
         </View>
+         {/* Lupa Password */}
+        <TouchableOpacity>
+          <Text style={styles.forgot}>
+            Lupa kata sandi?
+          </Text>
+        </TouchableOpacity>
         </View>
   
     </View>
