@@ -14,9 +14,11 @@ export const styles = StyleSheet.create({
   },
 
   headerTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#486357',
+    flex: 1,
+    textAlign: "center",
+    fontWeight: "bold",
+    color: "#1F3D36",
+    marginRight: 24,
   },
     loginBox: {
   backgroundColor: '#1B4332',
