@@ -1,3 +1,4 @@
+import { Card, CardContent } from "../ui/card";
 
 
 interface Props {
@@ -14,5 +15,11 @@ export default function StatsCard({
   description,
   color,
 }: Props) {
-  return ()
+  return (
+    <Card className="border-border shadow-none rounded-xl">
+      <CardContent className="p-6">
+        
+      </CardContent>
+    </Card>
+  )
 }
