@@ -43,7 +43,7 @@ export default function LoginForm() {
       </div>
       {/* Checkbox */}
       <div className="flex items-center gap-2 text-sm text-text-secondary">
-        <Checkbox id="remember" />
+        <Checkbox className="border-2px" id="remember" />
         <label htmlFor="remember">Keep me logged in for this session</label>
       </div>
 
