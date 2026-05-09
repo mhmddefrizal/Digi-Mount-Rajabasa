@@ -8,7 +8,6 @@ export default function Login() {
    const [password, setPassword] = useState("");
    // state untuk menyimpan email
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   return (
     <View style={styles.container}>
@@ -35,6 +34,7 @@ export default function Login() {
             style={styles.input}
           />
           <Ionicons name="mail-outline" size={20} color="gray" />
+        </View>
 
            {/* Password */}
         <Text style={styles.label}>Kata Sandi</Text>
