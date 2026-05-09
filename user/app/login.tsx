@@ -1,6 +1,6 @@
 import styles from "@/styles/LoginStyle";
 import React, { useState } from "react";
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, SafeAreaView } from "react-native";
 
 export default function Login() {
   //state untuk menyimpan username
@@ -8,7 +8,7 @@ export default function Login() {
    const [password, setPassword] = useState("");
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style="">Login Screen</Text>
       <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
@@ -29,6 +29,6 @@ export default function Login() {
         <Text style={styles.Button}>Login</Text>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
