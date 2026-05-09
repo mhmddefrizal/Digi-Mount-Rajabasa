@@ -23,6 +23,15 @@ export default function DashboardHeader() {
         <Settings className="w-5 h-5 text-text-secondary" />
         {/* separator */}
         <Separator orientation="vertical" className="h-6" />
+
+        {/* bagian admin */}
+        <div className="flex items-center gap-3">
+            <div className="text-right">
+                <p className="font-medium">
+                    Admin DigiMount Rajabasa
+                </p>
+            </div>
+        </div>
       </section>
     </header>
   );
