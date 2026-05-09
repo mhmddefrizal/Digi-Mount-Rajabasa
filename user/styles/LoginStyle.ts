@@ -8,10 +8,10 @@ export const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     loginBox: {
-  backgroundColor: '#fff',
-  padding: 20,
+  backgroundColor: '#1B4332',
+  padding: 75,
   borderRadius: 10,
-  marginTop: 100,
+  marginTop: 10,
 },
       title: {
     fontSize: 28,

@@ -9,6 +9,7 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
+      <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
       <TextInput
         placeholder="Username"
@@ -25,6 +26,7 @@ export default function Login() {
       />
         <View style={styles.Button}>
         <Text style={styles.Button}>Login</Text>
+        </View>
       </View>
     </View>
   );
