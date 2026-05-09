@@ -41,6 +41,14 @@ export default function DashboardPage() {
                description="2 added this month"
                color="text-blue-500"
             />
+
+            {/* stats card untuk menampilkan jumlah pembayaran */}
+            <StatsCard
+               title="PENDING PAYMENTS"
+               value="12"
+               description="3 urgent follow-ups"
+               color="text-red-500"
+            />
          </section>
 
          {/* Content */}
