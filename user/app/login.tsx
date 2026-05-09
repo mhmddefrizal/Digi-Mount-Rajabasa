@@ -58,7 +58,14 @@ export default function Login() {
         <Text style={styles.dividerText}>Atau</Text>
         <View style={styles.line} />
       </View>
-  
+      {/* Register */}
+      <Text style={styles.register}>
+        Belum punya akun?{" "}
+        <Text style={styles.registerBold}>
+          Daftar Sekarang
+        </Text>
+      </Text>
+
     </View>
   );
 }
