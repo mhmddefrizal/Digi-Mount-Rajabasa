@@ -21,11 +21,12 @@ export const styles = StyleSheet.create({
     marginRight: 24,
   },
     loginBox: {
-  backgroundColor: '#1B4332',
-  padding: 75,
-  borderRadius: 10,
-  marginTop: 10,
-},
+    backgroundColor: "#FFFFFF",
+    borderRadius: 20,
+    padding: 20,
+
+    elevation: 5,
+  },
       title: {
     fontSize: 28,
     fontWeight: "bold",
