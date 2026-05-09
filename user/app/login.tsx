@@ -31,6 +31,8 @@ export default function Login() {
             onChangeText={setEmail}
             style={styles.input}
           />
+          <Ionicons name="mail-outline" size={20} color="gray" />
+        </View>
         </View>
   
     </View>
