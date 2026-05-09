@@ -15,7 +15,11 @@ export default function Login() {
         <Text style={styles.headerTitle}>Digi-Mount Rajabasa</Text>
       </View>
       {/* Selamat datang */}
-      <Text style={styles.title}>Selamat Datang</Text>
+      <Text style={styles.subtitle}>Selamat Datang</Text>
+       <Text style={styles.subtitle}>
+        Masuk untuk memulai petualangan Anda di Gunung Rajabasa.
+      </Text>
+
       <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
       <TextInput
