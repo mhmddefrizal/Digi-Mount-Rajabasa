@@ -18,7 +18,13 @@ export default function DashboardLayout({
 
         {/* Main Content */}
         <section className="flex flex-1 flex-col">
-            
+            {/* Header */}
+            <DashboardHeader />
+
+            {/* Content */}
+            <section className="flex-1 p-8 overflow-auto">
+                {children}
+            </section>
         </section>
     </main>
   )
