@@ -85,7 +85,11 @@ Project ini merupakan tugas akhir mata kuliah **Pemrograman Berorientasi Service
 ---
 
 ## 📷 Preview (Coming Soon)
-
+A. Admin (CMS)
+1. Panel Admin Login (CMS)
+   <img width="1366" height="768" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/766cb35d-4a37-4c7b-9421-cda09880064e" />
+   
+2. Dashboard (CMS)
 ---
 
 ## ⭐ Kontribusi
