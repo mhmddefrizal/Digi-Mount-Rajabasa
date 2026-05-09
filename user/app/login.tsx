@@ -22,24 +22,17 @@ export default function Login() {
 
       <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
-      <TextInput
-        placeholder="Username"
-        value={username}
-        onChangeText={setUsername}
-        style={styles.input}
-      />
-      <TextInput
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-        style={styles.input}
-      />
-        <View style={styles.Button}>
-        <Text style={styles.Button}>Login</Text>
+      {/* Email */}
+        <Text style={styles.label}>Alamat Email</Text>
+        <View style={styles.inputContainer}>
+          <TextInput
+            placeholder="name@email.com"
+            value={email}
+            onChangeText={setEmail}
+            style={styles.input}
+          />
         </View>
-      </View>
-      
+  
     </View>
   );
 }

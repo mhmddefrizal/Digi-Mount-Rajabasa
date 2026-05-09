@@ -42,11 +42,8 @@ export const styles = StyleSheet.create({
     lineHeight: 22,
   },
    input: {
-    borderWidth: 1,
-    borderColor: "#ccc",
-    padding: 10,
-    marginBottom: 10,
-    borderRadius: 8,
+    flex: 1,
+    paddingVertical: 12,
   },
   inputContainer: {
     flexDirection: "row",
@@ -61,6 +58,11 @@ export const styles = StyleSheet.create({
     marginBottom: 8,
     color: "#1F3D36",
     fontWeight: "600",
+  },
+  forgot: {
+    textAlign: "right",
+    color: "#1F3D36",
+    fontWeight: "bold",
   },
 
   Button: {
