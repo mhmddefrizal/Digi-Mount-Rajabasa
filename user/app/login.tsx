@@ -8,8 +8,10 @@ export default function Login() {
    const [password, setPassword] = useState("");
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
+       {/* Header */}
       <View style={styles.header}>
+        <Ionicons name="arrow-back" size={24} color="#1F3D36" />
         <Text style={styles.headerTitle}>Digi-Mount Rajabasa</Text>
       </View>
       <View style={styles.loginBox}>
@@ -32,6 +34,6 @@ export default function Login() {
         </View>
       </View>
       
-    </SafeAreaView>
+    </View>
   );
 }
