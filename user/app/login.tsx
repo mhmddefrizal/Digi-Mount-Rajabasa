@@ -14,6 +14,8 @@ export default function Login() {
         <Ionicons name="arrow-back" size={24} color="#1F3D36" />
         <Text style={styles.headerTitle}>Digi-Mount Rajabasa</Text>
       </View>
+      {/* Selamat datang */}
+      <Text style={styles.title}>Selamat Datang</Text>
       <View style={styles.loginBox}>
       <Text style={styles.title}>Login</Text>
       <TextInput
