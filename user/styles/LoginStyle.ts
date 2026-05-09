@@ -82,6 +82,10 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     color: "gray",
   },
+   registerBold: {
+    fontWeight: "bold",
+    color: "#1F3D36",
+  },
 
   Button: {
     backgroundColor: "#007BFF",
