@@ -1,5 +1,5 @@
 import RegistrationQueue from "@/components/dashboard/registrationqueue";
-import StatsCard from "@/components/dashboard/StatsCard";
+import StatsCard from "@/components/dashboard/stats-card";
 import TrafficChart from "@/components/dashboard/trafficchart";
 
 // page halaman dashboard
@@ -33,7 +33,14 @@ export default function DashboardPage() {
                description="94% at Basecamp or above"
                color="text-primary"
             />
-            
+
+            {/* stats card untuk menampilkan jumlah rute */}
+            <StatsCard
+               title="TOTAL ROUTES"
+               value="8"
+               description="2 added this month"
+               color="text-blue-500"
+            />
          </section>
 
          {/* Content */}
