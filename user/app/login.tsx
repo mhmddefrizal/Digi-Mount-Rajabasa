@@ -32,6 +32,17 @@ export default function Login() {
             style={styles.input}
           />
           <Ionicons name="mail-outline" size={20} color="gray" />
+
+           {/* Password */}
+        <Text style={styles.label}>Kata Sandi</Text>
+        <View style={styles.inputContainer}>
+          <TextInput
+            placeholder="••••••••"
+            secureTextEntry
+            value={password}
+            onChangeText={setPassword}
+            style={styles.input}
+          />
         </View>
         </View>
   
