@@ -19,20 +19,26 @@ export class JalurService {
     // return 'This action adds a new jalur';
     // lakukan request ke microservice jalur untuk membuat data jalur baru
     const response = await jalur_api.post<Jalur>('/', createJalurDto);
+
     // kembalikan data jalur yang baru dibuat
     return response.data;
   }
 
   // buat fungsi findAll yang mengembalikan Promise<Jalur[]>
   async findAll(): Promise<Jalur[]> {
+    // buat request ke microservice jalur untuk mendapatkan semua data jalur
     const response = await jalur_api.get<Jalur[]>('/');
 
+    // kembalikan data jalur yang didapatkan
     return response.data;
   }
 
+  // buat fungsi findOne yang menerima parameter id dengan tipe string dan mengembalikan Promise<Jalur>
   async findOne(id: string): Promise<Jalur> {
+    // buat request ke microservice jalur untuk mendapatkan data jalur berdasarkan id
     const response = await jalur_api.get<Jalur>(`/${id}`);
 
+    // kembalikan data jalur yang didapatkan
     return response.data;
   }
 
