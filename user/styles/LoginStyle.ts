@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5F5F2',
   },
+  headerTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#486357',
+  },
     loginBox: {
   backgroundColor: '#1B4332',
   padding: 75,
