@@ -6,6 +6,9 @@ export default function Login() {
   //state untuk menyimpan username
    const [username, setUsername] = useState("");
    const [password, setPassword] = useState("");
+   // state untuk menyimpan email
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <View style={styles.container}>
