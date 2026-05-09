@@ -59,6 +59,11 @@ export const styles = StyleSheet.create({
     color: "#1F3D36",
     fontWeight: "600",
   },
+  forgot: {
+    textAlign: "right",
+    color: "#1F3D36",
+    fontWeight: "bold",
+  },
 
   Button: {
     backgroundColor: "#007BFF",
