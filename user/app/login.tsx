@@ -1,6 +1,6 @@
 import styles from "@/styles/LoginStyle";
 import React, { useState } from "react";
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 export default function Login() {
   //state untuk menyimpan username
