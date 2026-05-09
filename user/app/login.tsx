@@ -52,6 +52,12 @@ export default function Login() {
           </Text>
         </TouchableOpacity>
         </View>
+        {/* Divider/ atau */}
+      <View style={styles.dividerContainer}>
+        <View style={styles.line} />
+        <Text style={styles.dividerText}>Atau</Text>
+        <View style={styles.line} />
+      </View>
   
     </View>
   );
