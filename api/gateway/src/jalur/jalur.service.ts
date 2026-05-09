@@ -20,8 +20,10 @@ export class JalurService {
     return response.data;
   }
 
-  findAll() {
-    return `This action returns all jalur`;
+  async findAll(): Promise<Jalur[]> {
+    const response = await jalur_api.get<Jalur[]>('/');
+
+    return response.data;
   }
 
   findOne(id: number) {
