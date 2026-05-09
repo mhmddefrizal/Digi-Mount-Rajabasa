@@ -7,7 +7,14 @@ export default function TrafficChart() {
     <Card className="border-border rounded-xl shadow-none">
         <CardContent className="p-7">
             <header className="flex items-center justify-between mb-8">
-
+                {/* bagian judul */}
+                <h2 className="text-4xl font-semibold font-display">
+                    Climber Traffic
+                </h2>
+                <div className="flex items-center gap-2 text-sm text-text-muted">
+                    <div className="w-3 h-3 rounded-sm bg-primary" />
+                    Weekly Check-in
+                </div>
             </header>
         </CardContent>
     </Card>
