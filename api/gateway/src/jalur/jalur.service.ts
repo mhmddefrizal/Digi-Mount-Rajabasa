@@ -32,11 +32,14 @@ export class JalurService {
     return response.data;
   }
 
-  update(id: number, updateJalurDto: UpdateJalurDto) {
-    return `This action updates a #${id} jalur`;
+  async update(id: string, updateJalurDto: UpdateJalurDto): Promise<Jalur> {
+    // return `This action updates a #${id} jalur`;
+    const response = await jalur_api.patch<Jalur>(`/${id}`, updateJalurDto);
+
+    return response.data;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} jalur`;
+  remove(id: string) {
+    // return `This action removes a #${id} jalur`;
   }
 }
