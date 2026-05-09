@@ -29,17 +29,17 @@ export default function DashboardSidebar() {
         </button>
         {/* registration */}
         <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
-          <LayoutDashboard className="w-5 h-5" />
+          <ClipboardList className="w-5 h-5" />
           Registration
         </button>
         {/* payment */}
         <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
-          <LayoutDashboard className="w-5 h-5" />
+          <CreditCard className="w-5 h-5" />
           Payment
         </button>
         {/* Trail Management */}
         <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
-          <LayoutDashboard className="w-5 h-5" />
+          <Map className="w-5 h-5" />
           Trail Management
         </button>
       </nav>
