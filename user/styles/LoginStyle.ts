@@ -74,6 +74,10 @@ export const styles = StyleSheet.create({
     height: 1,
     backgroundColor: "#CFCFCF",
   },
+  dividerText: {
+    marginHorizontal: 10,
+    color: "gray",
+  },
 
   Button: {
     backgroundColor: "#007BFF",
