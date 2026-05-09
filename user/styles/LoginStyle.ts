@@ -32,6 +32,13 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 30,
   },
+  subtitle: {
+    textAlign: "center",
+    color: "gray",
+    marginTop: 10,
+    marginBottom: 30,
+    lineHeight: 22,
+  },
    input: {
     borderWidth: 1,
     borderColor: "#ccc",
