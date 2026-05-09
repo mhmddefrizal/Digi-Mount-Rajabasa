@@ -7,5 +7,9 @@ import {
 
 // TODO: add sidebar for dashboard
 export default function DashboardSidebar() {
-  return ();
+  return (
+    <aside className="w-[260px] border-r border-border bg-panel flex flex-col">
+        
+    </aside>
+  );
 }
