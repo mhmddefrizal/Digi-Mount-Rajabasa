@@ -78,6 +78,10 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10,
     color: "gray",
   },
+  register: {
+    textAlign: "center",
+    color: "gray",
+  },
 
   Button: {
     backgroundColor: "#007BFF",
