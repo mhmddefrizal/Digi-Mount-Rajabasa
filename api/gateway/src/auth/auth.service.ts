@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { HttpStatus, Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { AuthDto } from './dto/auth.dto';
 
@@ -14,6 +14,10 @@ export class AuthService {
       throw new UnauthorizedException({
         success: false,
         message: 'Email atau password tidak valid !',
+
+        metadata: {
+          status: HttpStatus.UNAUTHORIZED,
+        },
       });
     }
   }
