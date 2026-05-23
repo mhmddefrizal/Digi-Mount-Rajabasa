@@ -23,33 +23,31 @@ export class AuthService {
 
     // jika email dan password valid, buat token JWT
     // buat payload untuk JWT
-    refresh(user: AuthDto) {
-      const payload = {
-        email: user.email,
-        password: user.password,
-      };
+    const payload = {
+      email: dto.email,
+      password: dto.password,
+    };
 
-      // tampilkan hasil respon
-      return {
-        success: true,
-        message: 'Access token berhasil dibuat !',
+    // tampilkan hasil respon
+    return {
+      success: true,
+      message: 'Access token berhasil dibuat !',
 
-        metadata: {
-          status: HttpStatus.CREATED,
-        },
+      metadata: {
+        status: HttpStatus.CREATED,
+      },
 
-        // tampilkan data access token dan refresh token
-        data: {
-          access_token: this.jwtService.sign(payload, {
-            secret: 'access-gunung-rajabasa-oke',
-            expiresIn: '15m',
-          }),
-          refresh_token: this.jwtService.sign(payload, {
-            secret: 'refresh-gunung-rajabasa-oke',
-            expiresIn: '7d',
-          }),
-        },
-      };
-    }
+      // tampilkan data access token dan refresh token
+      data: {
+        access_token: this.jwtService.sign(payload, {
+          secret: 'access-gunung-rajabasa-oke',
+          expiresIn: '15m',
+        }),
+        refresh_token: this.jwtService.sign(payload, {
+          secret: 'refresh-gunung-rajabasa-oke',
+          expiresIn: '7d',
+        }),
+      },
+    };
   }
 }
