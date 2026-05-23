@@ -7,7 +7,7 @@ export class AuthService {
   // buat constructor untuk inject JwtService
   constructor(private jwtService: JwtService) {}
 
-  // buat fungsi login
+  // buat fungsi login untuk memvalidasi email dan password, jika valid buat token JWT
   login(dto: AuthDto) {
     // jika email dan password tidak valid, lempar error UnauthorizedException
     if (dto.email !== 'admin@gmail.com' || dto.password !== 'admin123') {
@@ -49,5 +49,17 @@ export class AuthService {
         }),
       },
     };
+  }
+
+  // buat fungsi refresh untuk membuat access token baru menggunakan refresh token
+  refresh(user: AuthDto) {
+    // buat payload untuk JWT
+    const payload = {
+      email: user.email,
+      password: user.password,
+    };
+
+    // tampilkan hasil respon
+    return {};
   }
 }
