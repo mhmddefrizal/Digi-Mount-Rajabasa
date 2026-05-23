@@ -23,4 +23,9 @@ export class JwtAccessStrategy extends PassportStrategy(
       secretOrKey: 'access-gunung-rajabasa-oke',
     });
   }
+
+  // buat fungsi validate untuk memvalidasi payload JWT
+  validate(payload: JwtPayload) {
+    return payload;
+  }
 }
