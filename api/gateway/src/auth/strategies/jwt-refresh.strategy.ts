@@ -15,5 +15,10 @@ export class JwtRefreshStrategy extends PassportStrategy(
   Strategy,
   'jwt-refresh-gunung-rajabasa',
 ) {
-  constructor() {}
+  constructor() {
+    super({
+      jwtFromRequest: ExtractJwt.fromBodyField('refresh_token'),
+      secretOrKey: 'refresh-gunung-rajabasa-oke',
+    });
+  }
 }
