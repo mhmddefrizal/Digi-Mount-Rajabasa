@@ -8,6 +8,11 @@ interface JwtPayload {
   password: string;
 }
 
+// buat interface untuk request yang sudah di-authenticate
+interface RequestWithUser extends Request {
+  user: JwtPayload;
+}
+
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
