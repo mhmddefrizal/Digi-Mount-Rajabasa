@@ -20,5 +20,11 @@ export class AuthService {
         },
       });
     }
+
+    // buat payload untuk JWT
+    const payload = {
+      email: dto.email,
+      password: dto.password,
+    };
   }
 }
