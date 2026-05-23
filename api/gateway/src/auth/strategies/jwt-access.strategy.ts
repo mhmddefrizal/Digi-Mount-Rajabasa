@@ -11,9 +11,16 @@ interface JwtPayload {
 }
 
 @Injectable()
+// buat class JwtAccessStrategy yang extends PassportStrategy dengan strategy JWT
 export class JwtAccessStrategy extends PassportStrategy(
   Strategy,
-  'jwt-access-rajabasa',
+  'jwt-access-gunung-rajabasa',
 ) {
-  constructor() {}
+  // buat constructor untuk mengatur strategi JWT
+  constructor() {
+    super({
+      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+      secretOrKey: 'access-gunung-rajabasa-oke',
+    });
+  }
 }
