@@ -32,6 +32,17 @@ export class AuthService {
     return {
       success: true,
       message: 'Access token berhasil dibuat !',
+
+      metadata: {
+        status: HttpStatus.CREATED,
+      },
+
+      data: {
+        access_token: this.jwtService.sign(payload, {
+          secret: 'gunung-rajabasa-oke',
+          expiresIn: '15m',
+        }),
+      },
     };
   }
 }
