@@ -67,6 +67,14 @@ export class AuthService {
       metadata: {
         status: HttpStatus.CREATED,
       },
+
+      // tampilkan data access token baru
+      data: {
+        access_token: this.jwtService.sign(payload, {
+          secret: 'access-gunung-rajabasa-oke',
+          expiresIn: '15m',
+        }),
+      },
     };
   }
 }
