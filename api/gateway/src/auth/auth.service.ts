@@ -60,6 +60,13 @@ export class AuthService {
     };
 
     // tampilkan hasil respon
-    return {};
+    return {
+      success: true,
+      message: 'Access token berhasil dibuat !',
+
+      metadata: {
+        status: HttpStatus.CREATED,
+      },
+    };
   }
 }
