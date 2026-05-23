@@ -18,8 +18,11 @@ export class InternalGuard implements CanActivate {
 
     if (secret !== 'rahasia-banget-cik') {
       throw new UnauthorizedException({
-        statusCode: HttpStatus.UNAUTHORIZED,
-        message: 'Unauthorized',
+        success: false,
+        message: 'Akses Ditolak: Hanya request internal yang diizinkan !',
+        metadata: {
+          status: HttpStatus.UNAUTHORIZED,
+        },
       });
     }
   }
