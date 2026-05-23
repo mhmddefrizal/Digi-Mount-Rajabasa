@@ -16,6 +16,7 @@ export class InternalGuard implements CanActivate {
     // tambahkan pengecekan header 'x-internal-secret' untuk memastikan bahwa request berasal dari internal
     const secret = request.headers['x-internal-secret'];
 
+    // jika secret tidak sesuai, tolak akses dengan mengembalikan response 401 Unauthorized
     if (secret !== 'rahasia-banget-cik') {
       throw new UnauthorizedException({
         success: false,
@@ -25,6 +26,7 @@ export class InternalGuard implements CanActivate {
         },
       });
     }
+    // jika secret sesuai, izinkan akses dengan mengembalikan true
     return true;
   }
 }
