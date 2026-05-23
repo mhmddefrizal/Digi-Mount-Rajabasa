@@ -1,11 +1,18 @@
 import { HttpException } from '@nestjs/common';
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 
 export const jalur_api = axios.create({
   baseURL: 'http://localhost:3001/api/jalur',
 });
 
-jalur_api.interceptors.request.use((config) => {});
+jalur_api.interceptors.request.use(
+  (config: InternalAxiosRequestConfig) => {
+    config.headers['x-internal-secret'] = 'rahasia-banget-cik';
+    return config;
+  },
+  (error) =>
+    Promise.reject(error instanceof Error ? error : new Error(String(error))),
+);
 
 // tambahkan interceptor untuk menangani error dari service jalur
 jalur_api.interceptors.response.use(
