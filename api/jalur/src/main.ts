@@ -5,6 +5,6 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // tambahkan prefix 'api'
   app.setGlobalPrefix('api');
-  await app.listen(process.env.PORT!);
+  await app.listen(process.env.PORT!, 'localhost');
 }
 void bootstrap();
