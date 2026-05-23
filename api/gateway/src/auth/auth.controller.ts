@@ -1,6 +1,7 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post, Req, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthDto } from './dto/auth.dto';
+import { JwtRefreshGuard } from './guards/jwt-refresh.guard';
 
 // buat interface untuk payload JWT
 interface JwtPayload {
@@ -20,5 +21,11 @@ export class AuthController {
   @Post('login')
   login(@Body() dto: AuthDto) {
     return this.authService.login(dto);
+  }
+
+  @UseGuards(JwtRefreshGuard)
+  @Post('refresh')
+  refresh(@Req() req: RequestWithUser) {
+    return this.authService.refresh(req.user);
   }
 }
