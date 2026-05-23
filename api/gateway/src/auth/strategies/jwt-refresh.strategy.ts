@@ -10,3 +10,10 @@ interface JwtPayload {
   password: string;
 }
 
+@Injectable()
+export class JwtRefreshStrategy extends PassportStrategy(
+  Strategy,
+  'jwt-refresh-gunung-rajabasa',
+) {
+  constructor() {}
+}
