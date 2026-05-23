@@ -9,3 +9,11 @@ interface JwtPayload {
   email: string;
   password: string;
 }
+
+@Injectable()
+export class JwtAccessStrategy extends PassportStrategy(
+  Strategy,
+  'jwt-access-rajabasa',
+) {
+  constructor() {}
+}
