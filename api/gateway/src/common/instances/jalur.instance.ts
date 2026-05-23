@@ -1,10 +1,12 @@
 import { HttpException } from '@nestjs/common';
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 
+// buat instance axios untuk service jalur dengan baseURL http://localhost:3001/api/jalur
 export const jalur_api = axios.create({
   baseURL: 'http://localhost:3001/api/jalur',
 });
 
+// tambahkan interceptor untuk menambahkan header 'x-internal-secret' pada setiap request ke service jalur
 jalur_api.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     config.headers['x-internal-secret'] = 'rahasia-banget-cik';
