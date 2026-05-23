@@ -40,11 +40,11 @@ export class AuthService {
       // tampilkan data access token dan refresh token
       data: {
         access_token: this.jwtService.sign(payload, {
-          secret: 'gunung-rajabasa-oke',
+          secret: 'access-gunung-rajabasa-oke',
           expiresIn: '15m',
         }),
         refresh_token: this.jwtService.sign(payload, {
-          secret: 'gunung-rajabasa-oke',
+          secret: 'refresh-gunung-rajabasa-oke',
           expiresIn: '7d',
         }),
       },
