@@ -9,7 +9,7 @@ export class AuthService {
 
   // buat fungsi login
   login(dto: AuthDto) {
-    // validasi static user
+    // jika email dan password tidak valid, lempar error UnauthorizedException
     if (dto.email !== 'admin@gmail.com' || dto.password !== 'admin123') {
       throw new UnauthorizedException({
         success: false,
@@ -21,10 +21,17 @@ export class AuthService {
       });
     }
 
+    // jika email dan password valid, buat token JWT
     // buat payload untuk JWT
     const payload = {
       email: dto.email,
       password: dto.password,
+    };
+
+    // tampilkan hasil respon
+    return {
+      success: true,
+      message: 'Access token berhasil dibuat !',
     };
   }
 }
