@@ -37,4 +37,9 @@ export default StyleSheet.create({
     padding: 20,
     elevation: 5,
   },
+   label: {
+    marginTop: 10,
+    fontWeight: "600",
+    color: "#1F3D36",
+  },
 });
