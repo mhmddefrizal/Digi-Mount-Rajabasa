@@ -27,3 +27,17 @@ const Register = () => {
       <Text style={styles.subtitle}>
         Mulai petualangan Anda di Gunung Rajabasa dengan mudah
       </Text>
+      {/* Card */}
+      <View style={styles.card}>
+
+        {/* Nama */}
+        <Text style={styles.label}>Nama Lengkap</Text>
+        <View style={styles.inputBox}>
+          <Ionicons name="person-outline" size={18} color="gray" />
+          <TextInput
+            placeholder="Masukkan nama sesuai KTP"
+            value={nama}
+            onChangeText={setNama}
+            style={styles.input}
+          />
+        </View>
