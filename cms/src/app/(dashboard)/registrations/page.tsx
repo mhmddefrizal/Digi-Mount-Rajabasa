@@ -9,6 +9,11 @@ export default function RegistrationPage() {
                 <h1 className="font-display text-6xl leading-none">
                     Registration List
                 </h1>
+
+                {/* paragraf untuk menjelaskan tujuan halaman */}
+                <p className="mt-3 text-text-secondary">
+                    Manage and monitor climber registrations.
+                </p>
             </header>
         </main>
     );
