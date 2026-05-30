@@ -46,7 +46,15 @@ export default function RegistrationTable() {
                 <div className="overflow-x-auto">
                     <table className="w-full">
                         <thead>
-
+                            {/* header tabel */}
+                            <tr className="border-b border-border">
+                                <th className="text-left py-4">Registration ID</th>
+                                <th className="text-left py-4">Leader Name</th>
+                                <th className="text-left py-4">Trail</th>
+                                <th className="text-left py-4">Status</th>
+                                <th className="text-left py-4">Registered At</th>
+                                <th className="text-left py-4">Action</th>
+                            </tr>
                         </thead>
                     </table>
                 </div>
