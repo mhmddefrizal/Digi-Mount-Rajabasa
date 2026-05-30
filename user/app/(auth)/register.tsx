@@ -65,3 +65,17 @@ const Register = () => {
           />
           <Ionicons name="eye-outline" size={18} color="gray" />
         </View>
+        {/* Checkbox */}
+        <TouchableOpacity
+          style={styles.checkboxRow}
+          onPress={() => setAgree(!agree)}
+        >
+          <Ionicons
+            name={agree ? "checkbox" : "square-outline"}
+            size={20}
+            color="#1F3D36"
+          />
+          <Text style={styles.checkboxText}>
+            Saya menyetujui Syarat & Ketentuan serta kebijakan privasi
+          </Text>
+        </TouchableOpacity>
