@@ -55,4 +55,16 @@ export default StyleSheet.create({
     flex: 1,
     padding: 10,
   },
+  checkboxRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    marginTop: 15,
+  },
+
+  checkboxText: {
+    marginLeft: 8,
+    flex: 1,
+    fontSize: 12,
+    color: "gray",
+  },
 });
