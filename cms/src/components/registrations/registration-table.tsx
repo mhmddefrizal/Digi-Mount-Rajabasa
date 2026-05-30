@@ -24,3 +24,13 @@ const registrations = [
     createdAt: "45 menit lalu",
   },
 ];
+
+// fungsi untuk menampilkan tabel pendaftaran
+export default function RegistrationTable() {
+    return (
+        <div>
+            {/* tabel pendaftaran */}
+            {/* masih menggunakan data dummy */}
+        </div>
+    );
+}
