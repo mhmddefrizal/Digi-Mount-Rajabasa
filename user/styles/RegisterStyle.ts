@@ -7,6 +7,15 @@ export default StyleSheet.create({
     alignItems: "center",
     padding: 20,
   },
+  iconContainer: {
+    width: 70,
+    height: 70,
+    backgroundColor: "#1F3D36",
+    borderRadius: 35,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 60,
+  },
   title: {
     fontSize: 28,
     fontWeight: "bold",
