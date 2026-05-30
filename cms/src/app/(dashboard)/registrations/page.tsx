@@ -1,3 +1,4 @@
+import RegistrationFilters from "@/components/registrations/registration-filters";
 import RegistrationStats from "@/components/registrations/registration-stats";
 
 // halaman untuk menampilkan daftar pendaftaran
@@ -16,6 +17,8 @@ export default function RegistrationPage() {
                     Manage and monitor climber registrations.
                 </p>
             </header>
+            {/* bagian untuk menampilkan filter pendaftaran */}
+            <RegistrationFilters />
             {/* bagian untuk menampilkan statistik pendaftaran */}
             <RegistrationStats />
         </main>
