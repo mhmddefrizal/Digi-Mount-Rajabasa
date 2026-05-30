@@ -1,6 +1,6 @@
 // komponen untuk menampilkan tabel pendaftaran
 
-import { Card, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 // data dummy untuk pendaftaran
 const registrations = [
@@ -40,6 +40,17 @@ export default function RegistrationTable() {
             <CardHeader>
                <CardTitle>Active Applications</CardTitle>
             </CardHeader>
+
+            {/* content untuk tabel pendaftaran */}
+            <CardContent>
+                <div className="overflow-x-auto">
+                    <table className="w-full">
+                        <thead>
+
+                        </thead>
+                    </table>
+                </div>
+            </CardContent>
          </Card>
       </section>
    );
