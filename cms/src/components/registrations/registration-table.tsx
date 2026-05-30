@@ -56,6 +56,23 @@ export default function RegistrationTable() {
                                 <th className="text-left py-4">Action</th>
                             </tr>
                         </thead>
+                        {/* body tabel */}
+                        <tbody>
+                            {registrations.map((item) => (
+                                <tr key={item.id} className="border-b border-border">
+                                    <td className="py-5 font-medium">{item.id}</td>
+                                    <td >{item.name}</td>
+                                    <td >{item.route}</td>
+                                    <td>{item.status}</td>
+                                    <td>{item.createdAt}</td>
+                                    <td>
+                                        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                            Details
+                                        </button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
                     </table>
                 </div>
             </CardContent>
