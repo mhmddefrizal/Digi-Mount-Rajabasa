@@ -79,4 +79,14 @@ export default StyleSheet.create({
     color: "white",
     fontWeight: "bold",
   },
+  loginText: {
+    textAlign: "center",
+    marginTop: 15,
+    color: "gray",
+  },
+
+  loginBold: {
+    color: "#1F3D36",
+    fontWeight: "bold",
+  },
 });
