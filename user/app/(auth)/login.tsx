@@ -2,7 +2,10 @@ import styles from "@/styles/LoginStyle";
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
+  
 export default function Login() {
+  const router = useRouter();
   //state untuk menyimpan username
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -54,8 +57,14 @@ export default function Login() {
       </View>
       {/* Register */}
       <Text style={styles.register}>
-        Belum punya akun? <Text style={styles.registerBold}>Daftar Sekarang</Text>
-      </Text>
+  Belum punya akun?{" "}
+  <Text
+    style={styles.registerBold}
+    onPress={() => router.push("/(auth)/register")}
+  >
+    Daftar Sekarang
+  </Text>
+</Text>
     </View>
   );
 }
