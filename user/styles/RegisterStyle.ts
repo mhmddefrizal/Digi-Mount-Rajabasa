@@ -30,4 +30,11 @@ export default StyleSheet.create({
     marginBottom: 20,
     paddingHorizontal: 20,
   },
+  card: {
+    width: "100%",
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: 20,
+    elevation: 5,
+  },
 });
