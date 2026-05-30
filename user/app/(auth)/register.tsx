@@ -79,3 +79,9 @@ const Register = () => {
             Saya menyetujui Syarat & Ketentuan serta kebijakan privasi
           </Text>
         </TouchableOpacity>
+ {/* Button */}
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>
+            Daftar Sekarang →
+          </Text>
+        </TouchableOpacity>
