@@ -67,4 +67,16 @@ export default StyleSheet.create({
     fontSize: 12,
     color: "gray",
   },
+  button: {
+    backgroundColor: "#1F3D36",
+    padding: 15,
+    borderRadius: 12,
+    marginTop: 20,
+    alignItems: "center",
+  },
+
+  buttonText: {
+    color: "white",
+    fontWeight: "bold",
+  },
 });
