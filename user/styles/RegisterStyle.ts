@@ -42,4 +42,17 @@ export default StyleSheet.create({
     fontWeight: "600",
     color: "#1F3D36",
   },
+  inputBox: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#F3F3F3",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    marginTop: 5,
+  },
+
+  input: {
+    flex: 1,
+    padding: 10,
+  },
 });
