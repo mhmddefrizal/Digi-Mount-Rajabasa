@@ -1,7 +1,26 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { CreditCard, LayoutDashboard, Map, ClipboardList } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 // add sidebar for dashboard
 export default function DashboardSidebar() {
+  const pathname = usePathname();
+  const navItems = [
+    {
+      label: "Dashboard",
+      href: "/dashboard",
+      icon: LayoutDashboard,
+    },
+    {
+      label: "Registration",
+      href: "/registrations",
+      icon: ClipboardList,
+    },
+  ];
+
   return (
     <aside className="w-65 border-r border-border bg-panel flex flex-col">
       {/* bagian logo (masih simbol) */}
@@ -22,23 +41,34 @@ export default function DashboardSidebar() {
       </header>
       <nav className="flex-1 px-3 py-6 space-y-2">
         {/* bagian menu navigasi */}
-        {/* dashboard */}
-        <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
-          <LayoutDashboard className="w-5 h-5" />
-          Dashboard
-        </button>
-        {/* registration */}
-        <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
-          <ClipboardList className="w-5 h-5" />
-          Registration
-        </button>
+        {navItems.map((item) => {
+          const isActive = pathname.startsWith(item.href);
+          const Icon = item.icon;
+
+          return (
+            <Link
+              key={item.label}
+              href={item.href}
+              className={cn(
+                "w-full flex items-center gap-3 rounded-lg px-4 py-3 font-medium transition",
+                isActive
+                  ? "bg-primary-dim text-primary"
+                  : "text-text-secondary hover:bg-primary-dim/60 hover:text-primary"
+              )}
+            >
+              <Icon className="w-5 h-5" />
+              {item.label}
+            </Link>
+          );
+        })}
+
         {/* payment */}
-        <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
+        <button className="w-full flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-text-secondary transition hover:bg-primary-dim/60 hover:text-primary">
           <CreditCard className="w-5 h-5" />
           Payment
         </button>
         {/* Trail Management */}
-        <button className="w-full flex items-center gap-3 rounded-lg bg-primary-dim text-primary px-4 py-3 font-medium transition">
+        <button className="w-full flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-text-secondary transition hover:bg-primary-dim/60 hover:text-primary">
           <Map className="w-5 h-5" />
           Trail Management
         </button>
