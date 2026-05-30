@@ -21,3 +21,9 @@ const Register = () => {
       <View style={styles.iconContainer}>
         <Ionicons name="walk" size={40} color="white" />
       </View>
+       {/* Title */}
+      <Text style={styles.title}>Buat Akun</Text>
+
+      <Text style={styles.subtitle}>
+        Mulai petualangan Anda di Gunung Rajabasa dengan mudah
+      </Text>
