@@ -13,6 +13,13 @@ export default function RegistrationFilters() {
             >
                 All Trails
             </Button>
+            {/* tombol untuk melihat semua status */}
+            <Button 
+                variant="outline"
+                className="min-w-45"
+            >
+                All Status
+            </Button>
          </div>
       </section>
    );
