@@ -52,3 +52,16 @@ const Register = () => {
             style={styles.input}
           />
         </View>
+         {/* Password */}
+        <Text style={styles.label}>Password</Text>
+        <View style={styles.inputBox}>
+          <Ionicons name="lock-closed-outline" size={18} color="gray" />
+          <TextInput
+            placeholder="Minimal 8 karakter"
+            secureTextEntry
+            value={password}
+            onChangeText={setPassword}
+            style={styles.input}
+          />
+          <Ionicons name="eye-outline" size={18} color="gray" />
+        </View>
