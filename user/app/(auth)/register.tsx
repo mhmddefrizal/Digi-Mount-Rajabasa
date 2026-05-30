@@ -41,3 +41,14 @@ const Register = () => {
             style={styles.input}
           />
         </View>
+        {/* Email */}
+        <Text style={styles.label}>Email</Text>
+        <View style={styles.inputBox}>
+          <Ionicons name="mail-outline" size={18} color="gray" />
+          <TextInput
+            placeholder="contoh@email.com"
+            value={email}
+            onChangeText={setEmail}
+            style={styles.input}
+          />
+        </View>
