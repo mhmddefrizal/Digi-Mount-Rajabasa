@@ -127,4 +127,29 @@ export default function Home() {
             Home
           </Text>
         </TouchableOpacity>
+         <TouchableOpacity style={styles.navItem}>
+          <Ionicons
+            name="time-outline"
+            size={22}
+            color="gray"
+          />
+          <Text style={styles.navText}>
+            Riwayat
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.navItem}>
+          <Ionicons
+            name="person-outline"
+            size={22}
+            color="gray"
+          />
+          <Text style={styles.navText}>
+            Profil
+          </Text>
+        </TouchableOpacity>
+
+      </View>
+    </View>
+  );
 }
