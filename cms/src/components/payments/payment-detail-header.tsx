@@ -1,4 +1,5 @@
 import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
 
 // komponen PaymentDetailHeader untuk menampilkan header detail pembayaran
 export default function PaymentDetailHeader() {
@@ -21,6 +22,15 @@ export default function PaymentDetailHeader() {
                     Eiger Vanguard Expedition
                 </p>
             </article>
+            {/* Action Buttons */}
+            <div className="flex gap-3">
+                <Button variant="outline">
+                    Print Invoice
+                </Button>
+                <Button>
+                    Download PDF
+                </Button>
+            </div>
         </header>
     )
 }
