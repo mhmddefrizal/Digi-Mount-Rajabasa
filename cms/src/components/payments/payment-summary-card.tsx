@@ -7,5 +7,14 @@ import {
 
 // komponen kartu ringkasan pembayaran
 export default function PaymentSummaryCard() {
-  return ()
+  return (
+    <Card>
+        {/* header untuk kartu ringkasan pembayaran */}
+        <CardHeader>
+            <CardTitle>
+                Payment Summary
+            </CardTitle>
+        </CardHeader>
+    </Card>
+  )
 }
