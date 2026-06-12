@@ -54,4 +54,13 @@ export default function Home() {
             ☀ Cuaca Cerah • 24°C
           </Text>
         </View>
+        {/* Registrasi */}
+        <TouchableOpacity style={styles.card}>
+          <View style={styles.iconBox}>
+            <Ionicons
+              name="walk"
+              size={24}
+              color="white"
+            />
+          </View>
 }
