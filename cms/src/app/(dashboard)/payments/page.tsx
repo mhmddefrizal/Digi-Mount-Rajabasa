@@ -1,5 +1,6 @@
 import PaymentStats from "@/components/payments/payment-stats";
 import PaymentTable from "@/components/payments/payment-table";
+import { Button } from "@/components/ui/button";
 
 // function halaman pembayaran
 export default function PaymentsPage() {
@@ -16,6 +17,9 @@ export default function PaymentsPage() {
                         Review and monitor expedition payment transactions.
                     </p>
                 </section>
+                <Button variant="outline">
+                    Export CSV
+                </Button>
             </header>
             <PaymentStats />
             <PaymentTable />
