@@ -139,4 +139,14 @@ export default StyleSheet.create({\
   navItem: {
     alignItems: "center",
   },
+  activeNav: {
+    color: "#1F3D36",
+    fontWeight: "600",
+    fontSize: 12,
+  },
+
+  navText: {
+    color: "gray",
+    fontSize: 12,
+  },
 });
