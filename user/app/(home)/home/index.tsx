@@ -7,7 +7,7 @@ import {
 } from "react-native";
 
 import Ionicons from "@expo/vector-icons/Ionicons";
-import styles from "@/styles/HomeStyle";
+import styles from "../../../styles/HomeStyle";
 
 export default function Home() {
   return (
