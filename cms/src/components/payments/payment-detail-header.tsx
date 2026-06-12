@@ -15,6 +15,11 @@ export default function PaymentDetailHeader() {
                         Paid
                     </Badge>
                 </div>
+                {/* Expedition Description (Dummy) */}
+                <p className="mt-2 text-text-secondary">
+                    {/* Expedition Name (Dummy) */}
+                    Eiger Vanguard Expedition
+                </p>
             </article>
         </header>
     )
