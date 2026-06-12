@@ -125,4 +125,18 @@ export default StyleSheet.create({\
     color: "#555",
     lineHeight: 20,
   },
+  bottomNav: {
+    height: 70,
+    backgroundColor: "white",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+
+    borderTopWidth: 1,
+    borderColor: "#EEE",
+  },
+
+  navItem: {
+    alignItems: "center",
+  },
 });
