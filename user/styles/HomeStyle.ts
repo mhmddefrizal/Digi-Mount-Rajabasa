@@ -98,4 +98,15 @@ export default StyleSheet.create({\
     marginTop: 5,
     color: "#666",
   },
+  arrow: {
+    alignSelf: "flex-end",
+    marginTop: 10,
+  },
+
+  tipsCard: {
+    backgroundColor: "#EDEFEA",
+    margin: 20,
+    borderRadius: 16,
+    padding: 15,
+  },
 });
