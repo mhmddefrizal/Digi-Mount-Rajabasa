@@ -41,8 +41,14 @@ export default function TrailCard({ trail }: Props) {
                 {/* Konten kartu trail */}
                 <CardContent className="space-y-5 p-5">
                     <header>
+                        {/* Judul dan jarak trail */}
                         <div className="flex justify-between">
-                            
+                            <h3 className="font-display text-3xl">
+                                {trail.name}
+                            </h3>
+                            <span className="text-primary font-semibold">
+                                {trail.distance}
+                            </span>
                         </div>
                     </header>
                 </CardContent>
