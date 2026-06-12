@@ -38,4 +38,20 @@ export default function Home() {
         <Text style={styles.description}>
           Siap untuk petualangan berikutnya di Gunung Rajabasa?
         </Text>
+        {/* Banner */}
+        <View style={styles.banner}>
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>
+              Status Kawasan
+            </Text>
+          </View>
+
+          <Text style={styles.bannerTitle}>
+            Jalur Pendakian Dibuka
+          </Text>
+
+          <Text style={styles.bannerWeather}>
+            ☀ Cuaca Cerah • 24°C
+          </Text>
+        </View>
 }
