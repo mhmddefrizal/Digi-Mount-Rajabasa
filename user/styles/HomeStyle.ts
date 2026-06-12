@@ -65,4 +65,22 @@ export default StyleSheet.create({\
     color: "#D9D9D9",
     marginTop: 8,
   },
+  card: {
+    backgroundColor: "white",
+    marginHorizontal: 20,
+    marginBottom: 15,
+    borderRadius: 20,
+    padding: 20,
+
+    elevation: 3,
+  },
+
+  iconBox: {
+    width: 40,
+    height: 40,
+    backgroundColor: "#1F3D36",
+    borderRadius: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
