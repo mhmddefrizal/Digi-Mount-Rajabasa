@@ -8,3 +8,7 @@ import {
 
 import Ionicons from "@expo/vector-icons/Ionicons";
 import styles from "@/styles/HomeStyle";
+
+export default function Home() {
+  
+}
