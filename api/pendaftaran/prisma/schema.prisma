@@ -11,3 +11,25 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Pendaftaran {
+  id                String   @id @default(uuid())
+
+  namaKetua         String
+  nomorHp           String
+
+  tipePendakian     String
+
+  tanggalPendakian  DateTime
+
+  jumlahAnggota     Int
+  jumlahMotor       Int
+
+  totalBiaya        Int
+
+  statusPembayaran  String @default("BELUM_BAYAR")
+
+  jalurId           String
+
+  createdAt         DateTime @default(now())
+}
