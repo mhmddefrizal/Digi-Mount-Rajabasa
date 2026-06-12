@@ -23,3 +23,8 @@ interface Trail {
 interface Props {
   trail: Trail;
 }
+
+// komponen TrailCard untuk menampilkan informasi trail
+export default function TrailCard({ trail }: Props) {
+    return ()
+}
