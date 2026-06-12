@@ -56,6 +56,14 @@ export default function TrailCard({ trail }: Props) {
                             <span>{trail.location}</span>
                         </div>
                     </header>
+                    {/* Footer kartu trail */}
+                    <footer className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                            <span className="text-sm text-text-secondary">
+                                Status:
+                            </span>
+                        </div>
+                    </footer>
                 </CardContent>
             </Card>
         </article>
