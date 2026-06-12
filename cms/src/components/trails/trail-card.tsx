@@ -31,7 +31,12 @@ export default function TrailCard({ trail }: Props) {
         <article>
             <Card className="overflow-hidden">
                 <div className="relative h-44">
-
+                    {/* Gambar trail */}
+                    <Image src={trail.image} alt={trail.name} layout="fill" objectFit="cover" />
+                    {/* Badge tingkat kesulitan */}
+                    <Badge className="absolute top-3 left-3 bg-primary text-primary-foreground">
+                        {trail.difficulty}
+                    </Badge>
                 </div>
             </Card>
         </article>
