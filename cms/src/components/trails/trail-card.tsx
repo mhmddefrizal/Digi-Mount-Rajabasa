@@ -50,6 +50,11 @@ export default function TrailCard({ trail }: Props) {
                                 {trail.distance}
                             </span>
                         </div>
+                        <div className="flex items-center gap-2 mt-2 text-sm text-text-secondary">
+                            {/* Lokasi trail dengan ikon */}
+                            <MapPin size={16} />
+                            <span>{trail.location}</span>
+                        </div>
                     </header>
                 </CardContent>
             </Card>
