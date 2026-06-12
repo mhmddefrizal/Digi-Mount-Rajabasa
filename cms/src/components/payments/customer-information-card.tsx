@@ -37,6 +37,33 @@ export default function CustomerInformationCard() {
                         +62 812-3456-7890
                     </dd>
                 </div>
+                <div>
+                    <dt className="text-xs text-text-muted">
+                        NIK
+                    </dt>
+                    <dd className="font-semibold">
+                        {/* NIK (dummy) */}
+                        1234567890123456
+                    </dd>
+                </div>
+                <div>
+                    <dt className="text-xs text-text-muted">
+                        EMAIL
+                    </dt>
+                    <dd className="font-semibold">
+                        {/* email (dummy) */}
+                        bambang.wijaya@example.com
+                    </dd>
+                </div>
+                <div>
+                    <dt className="text-xs text-text-muted">
+                        PAYMENT METHOD
+                    </dt>
+                    <dd className="font-semibold">
+                        {/* metode pembayaran (dummy) */}
+                        Bank Transfer
+                    </dd>
+                </div>
             </dl>
         </CardContent>
     </Card>
