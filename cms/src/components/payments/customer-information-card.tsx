@@ -7,5 +7,14 @@ import {
 
 // komponen kartu informasi pelanggan
 export default function CustomerInformationCard() {
-  return ()
+  return (
+    // gunakan elemen article untuk membungkus kartu informasi pelanggan
+    <Card>
+        <CardHeader>
+            <CardTitle>
+                Customer Information
+            </CardTitle>
+        </CardHeader>
+    </Card>
+  )
 }
