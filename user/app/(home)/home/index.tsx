@@ -63,6 +63,20 @@ export default function Home() {
               color="white"
             />
           </View>
+          <Text style={styles.cardTitle}>
+  Mulai Registrasi
+</Text>
+
+<Text style={styles.cardDesc}>
+  Daftarkan kelompok pendakian Anda dengan aman dan cepat.
+</Text>
+
+<Ionicons
+  style={styles.arrow}
+  name="arrow-forward"
+  size={20}
+  color="#1F3D36"
+/>
            {/* Riwayat */}
         <TouchableOpacity style={styles.card}>
           <View
