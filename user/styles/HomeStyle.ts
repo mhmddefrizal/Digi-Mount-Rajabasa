@@ -36,4 +36,18 @@ export default StyleSheet.create({\
     marginTop: 5,
     color: "#555",
   },
+  banner: {
+    backgroundColor: "#1F3D36",
+    margin: 20,
+    borderRadius: 20,
+    padding: 20,
+  },
+
+  badge: {
+    alignSelf: "flex-start",
+    backgroundColor: "#D67E3B",
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 10,
+  },
 });
