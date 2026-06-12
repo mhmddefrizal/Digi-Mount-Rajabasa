@@ -77,4 +77,11 @@ export default function Home() {
               color="#D67E3B"
             />
           </View>
+           <Text style={styles.cardTitle}>
+            Lihat Riwayat
+          </Text>
+
+          <Text style={styles.cardDesc}>
+            Cek status perizinan dan dokumen pendakian sebelumnya.
+          </Text>
 }
