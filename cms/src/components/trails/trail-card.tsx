@@ -38,6 +38,14 @@ export default function TrailCard({ trail }: Props) {
                         {trail.difficulty}
                     </Badge>
                 </div>
+                {/* Konten kartu trail */}
+                <CardContent className="space-y-5 p-5">
+                    <header>
+                        <div className="flex justify-between">
+                            
+                        </div>
+                    </header>
+                </CardContent>
             </Card>
         </article>
     )
