@@ -114,4 +114,17 @@ export default function Home() {
         </View>
 
       </ScrollView>
+       {/* Bottom Navigation */}
+      <View style={styles.bottomNav}>
+
+        <TouchableOpacity style={styles.navItem}>
+          <Ionicons
+            name="home"
+            size={22}
+            color="#1F3D36"
+          />
+          <Text style={styles.activeNav}>
+            Home
+          </Text>
+        </TouchableOpacity>
 }
