@@ -84,4 +84,11 @@ export default function Home() {
           <Text style={styles.cardDesc}>
             Cek status perizinan dan dokumen pendakian sebelumnya.
           </Text>
+          <Ionicons
+            style={styles.arrow}
+            name="arrow-forward"
+            size={20}
+            color="#1F3D36"
+          />
+        </TouchableOpacity>
 }
