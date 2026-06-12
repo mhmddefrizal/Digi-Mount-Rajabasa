@@ -53,7 +53,7 @@ const Register = () => {
           Sudah memiliki akun? <Text style={styles.loginBold}>Masuk di sini</Text>
         </Text>
       </View>
-    </View>
+    </View> 
   );
 };
 
