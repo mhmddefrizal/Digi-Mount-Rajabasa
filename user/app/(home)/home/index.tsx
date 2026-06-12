@@ -77,6 +77,7 @@ export default function Home() {
   size={20}
   color="#1F3D36"
 />
+</TouchableOpacity>
            {/* Riwayat */}
         <TouchableOpacity style={styles.card}>
           <View
