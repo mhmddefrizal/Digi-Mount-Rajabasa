@@ -37,6 +37,19 @@ export const styles = StyleSheet.create({
 
     elevation: 5,
   },
+  loginButton: {
+  backgroundColor: "#1F3D36",
+  height: 50,
+  borderRadius: 12,
+
+  justifyContent: "center",
+  alignItems: "center",
+},
+loginButtonText: {
+  color: "#FFFFFF",
+  fontSize: 16,
+  fontWeight: "700",
+},
   title: {
     fontSize: 30,
     fontWeight: "bold",

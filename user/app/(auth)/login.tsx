@@ -30,7 +30,7 @@ export default function Login() {
       <Text style={styles.subtitle}>Masuk untuk memulai petualangan Anda di Gunung Rajabasa.</Text>
 
       <View style={styles.loginBox}>
-        <Text style={styles.title}>Login</Text>
+
         {/* Email */}
         <Text style={styles.label}>Alamat Email</Text>
         <View style={styles.inputContainer}>
@@ -44,6 +44,9 @@ export default function Login() {
           <TextInput placeholder="••••••••" secureTextEntry value={password} onChangeText={setPassword} style={styles.input} />
           <Ionicons name="lock-closed-outline" size={20} color="gray" />
         </View>
+        <TouchableOpacity style={styles.loginButton}>
+          <Text style={styles.loginButtonText}>Login</Text>
+        </TouchableOpacity>
         {/* Lupa Password */}
         <TouchableOpacity>
           <Text style={styles.forgot}>Lupa kata sandi?</Text>
