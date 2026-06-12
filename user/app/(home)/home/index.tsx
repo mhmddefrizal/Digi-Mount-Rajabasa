@@ -104,4 +104,14 @@ export default function Home() {
               Tips Keamanan
             </Text>
           </View>
+          <Text style={styles.tip}>
+            • Pastikan setiap anggota kelompok membawa identitas fisik yang berlaku.
+          </Text>
+
+          <Text style={styles.tip}>
+            • Lakukan pendaftaran minimal 2 hari sebelum tanggal keberangkatan.
+          </Text>
+        </View>
+
+      </ScrollView>
 }
