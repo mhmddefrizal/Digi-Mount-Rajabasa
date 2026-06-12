@@ -1,5 +1,7 @@
 import { Button } from "../ui/button";
-import { Card, CardContent, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+
+import PaymentStatusBadge from "./payment-status-badge";
 
 // komponen PaymentTable untuk menampilkan tabel pembayaran
 export default function PaymentTable() {
