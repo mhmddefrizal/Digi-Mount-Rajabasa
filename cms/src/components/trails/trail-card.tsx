@@ -68,6 +68,15 @@ export default function TrailCard({ trail }: Props) {
                                 {trail.status ? "Open" : "Closed"}
                             </span>
                         </div>
+                        <div className="flex gap-3">
+                            {/* Tombol edit dan hapus dengan ikon */}
+                            <button className="text-primary hover:text-primary/80">
+                                <Pencil size={16} />
+                            </button>
+                            <button className="text-destructive hover:text-destructive/80">
+                                <Trash2 size={16} />
+                            </button>
+                        </div>
                     </footer>
                 </CardContent>
             </Card>
