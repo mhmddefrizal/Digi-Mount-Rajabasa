@@ -27,6 +27,16 @@ export default function CustomerInformationCard() {
                         Bambang Wijaya
                     </dd>
                 </div>
+                {/* informasi nomor telepon */}
+                <div>
+                    <dt className="text-xs text-text-muted">
+                        PHONE NUMBER
+                    </dt>
+                    <dd className="font-semibold">
+                        {/* nomor telepon (dummy) */}
+                        +62 812-3456-7890
+                    </dd>
+                </div>
             </dl>
         </CardContent>
     </Card>
