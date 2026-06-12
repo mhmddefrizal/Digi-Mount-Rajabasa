@@ -83,4 +83,19 @@ export default StyleSheet.create({\
     justifyContent: "center",
     alignItems: "center",
   },
+  orangeBox: {
+    backgroundColor: "#F8E5D5",
+  },
+
+  cardTitle: {
+    marginTop: 15,
+    fontWeight: "bold",
+    fontSize: 24,
+    color: "#1F3D36",
+  },
+
+  cardDesc: {
+    marginTop: 5,
+    color: "#666",
+  },
 });
