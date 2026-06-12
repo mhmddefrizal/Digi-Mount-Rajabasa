@@ -50,4 +50,15 @@ export default StyleSheet.create({\
     paddingVertical: 4,
     borderRadius: 10,
   },
+  badgeText: {
+    color: "white",
+    fontSize: 11,
+  },
+
+  bannerTitle: {
+    marginTop: 15,
+    color: "white",
+    fontSize: 22,
+    fontWeight: "bold",
+  },
 });
