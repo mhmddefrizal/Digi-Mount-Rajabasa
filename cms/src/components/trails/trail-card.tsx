@@ -2,11 +2,11 @@
 import Image from "next/image";
 
 // import components kartu
-import { Card, CardContent } from "@components/ui/card";
+import { Card, CardContent } from "../ui/card";
 
 // import komponen badge, switch, dan ikon
-import { Badge } from "@components/ui/badge";
-import { Switch } from "@components/ui/switch";
+import { Badge } from "../ui/badge";
+import { Switch } from "../ui/switch";
 import { MapPin, Pencil, Trash2 } from "lucide-react";
 
 // definisikan tipe data untuk trail (sementara menggunakan tipe data statis, bisa disesuaikan dengan data yang sebenarnya)
