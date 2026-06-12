@@ -1,5 +1,10 @@
 import { Badge } from "../ui/badge";
 
+// definisikan tipe data untuk props komponen PaymentStatusBadge
+interface Props {
+  status: string;
+}
+
 export default function PaymentStatusBadge({
     status,
 }: Props) {
