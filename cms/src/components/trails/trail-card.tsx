@@ -8,3 +8,18 @@ import { Card, CardContent } from "@components/ui/card";
 import { Badge } from "@components/ui/badge";
 import { Switch } from "@components/ui/switch";
 import { MapPin, Pencil, Trash2 } from "lucide-react";
+
+// definisikan tipe data untuk trail (sementara menggunakan tipe data statis, bisa disesuaikan dengan data yang sebenarnya)
+interface Trail {
+  id: number;
+  name: string;
+  distance: string;
+  location: string;
+  difficulty: string;
+  status: boolean;
+  image: string;
+}
+
+interface Props {
+  trail: Trail;
+}
