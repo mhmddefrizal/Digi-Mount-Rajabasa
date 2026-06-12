@@ -15,6 +15,20 @@ export default function CustomerInformationCard() {
                 Customer Information
             </CardTitle>
         </CardHeader>
+        {/* card informasi pelanggan pendaftar */}
+        <CardContent>
+            <dl className="grid grid-cols-2 gap-6">
+                <div>
+                    <dt className="text-xs text-text-muted">
+                        LEADER NAME
+                    </dt>
+                    <dd className="font-semibold">
+                        {/* nama ketua (dummy) */}
+                        Bambang Wijaya
+                    </dd>
+                </div>
+            </dl>
+        </CardContent>
     </Card>
   )
 }
