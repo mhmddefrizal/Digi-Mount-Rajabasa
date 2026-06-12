@@ -10,5 +10,20 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import styles from "@/styles/HomeStyle";
 
 export default function Home() {
-  
+  return (
+    <View style={styles.container}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+
+        {/* Header */}
+        <View style={styles.header}>
+          <Ionicons
+            name="menu"
+            size={24}
+            color="#1F3D36"
+          />
+
+          <Text style={styles.headerTitle}>
+            Digi-Mount Rajabasa
+          </Text>
+        </View>
 }
