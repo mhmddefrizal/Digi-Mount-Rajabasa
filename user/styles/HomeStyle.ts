@@ -109,4 +109,20 @@ export default StyleSheet.create({\
     borderRadius: 16,
     padding: 15,
   },
+  tipsHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  tipsTitle: {
+    marginLeft: 8,
+    fontWeight: "600",
+    color: "#1F3D36",
+  },
+
+  tip: {
+    marginTop: 10,
+    color: "#555",
+    lineHeight: 20,
+  },
 });
