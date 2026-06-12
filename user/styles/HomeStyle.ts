@@ -61,4 +61,8 @@ export default StyleSheet.create({\
     fontSize: 22,
     fontWeight: "bold",
   },
+  bannerWeather: {
+    color: "#D9D9D9",
+    marginTop: 8,
+  },
 });
