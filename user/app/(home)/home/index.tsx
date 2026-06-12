@@ -91,4 +91,17 @@ export default function Home() {
             color="#1F3D36"
           />
         </TouchableOpacity>
+        {/* Tips */}
+        <View style={styles.tipsCard}>
+          <View style={styles.tipsHeader}>
+            <Ionicons
+              name="shield-checkmark-outline"
+              size={18}
+              color="#1F3D36"
+            />
+
+            <Text style={styles.tipsTitle}>
+              Tips Keamanan
+            </Text>
+          </View>
 }
