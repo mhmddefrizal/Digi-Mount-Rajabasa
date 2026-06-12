@@ -63,4 +63,18 @@ export default function Home() {
               color="white"
             />
           </View>
+           {/* Riwayat */}
+        <TouchableOpacity style={styles.card}>
+          <View
+            style={[
+              styles.iconBox,
+              styles.orangeBox,
+            ]}
+          >
+            <Ionicons
+              name="time-outline"
+              size={24}
+              color="#D67E3B"
+            />
+          </View>
 }
