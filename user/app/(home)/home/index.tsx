@@ -26,4 +26,16 @@ export default function Home() {
             Digi-Mount Rajabasa
           </Text>
         </View>
+        {/* Greeting */}
+        <Text style={styles.smallText}>
+          Halo, Ketua Kelompok
+        </Text>
+
+        <Text style={styles.welcome}>
+          Selamat Datang
+        </Text>
+
+        <Text style={styles.description}>
+          Siap untuk petualangan berikutnya di Gunung Rajabasa?
+        </Text>
 }
