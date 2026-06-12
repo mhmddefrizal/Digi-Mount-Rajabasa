@@ -62,6 +62,11 @@ export default function TrailCard({ trail }: Props) {
                             <span className="text-sm text-text-secondary">
                                 Status:
                             </span>
+                            {/* Switch untuk mengubah status trail */}
+                            <Switch checked={trail.status} />
+                            <span className= {trail.status ? "text-primary text-sm font-medium" : "text-text-muted text-sm"}>
+                                {trail.status ? "Open" : "Closed"}
+                            </span>
                         </div>
                     </footer>
                 </CardContent>
