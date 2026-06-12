@@ -24,4 +24,16 @@ export default StyleSheet.create({\
     color: "gray",
     fontSize: 12,
   },
+   welcome: {
+    marginHorizontal: 20,
+    fontSize: 34,
+    fontWeight: "bold",
+    color: "#1F3D36",
+  },
+
+  description: {
+    marginHorizontal: 20,
+    marginTop: 5,
+    color: "#555",
+  },
 });
