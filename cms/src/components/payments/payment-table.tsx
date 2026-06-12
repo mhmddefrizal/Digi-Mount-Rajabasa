@@ -3,6 +3,50 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 import PaymentStatusBadge from "./payment-status-badge";
 
+// data pembayaran statis untuk sementara
+const payments = [
+  {
+    id: "REG-1024",
+    groupName: "Rajabasa Adventure",
+    leader: "Ahmad Fauzi",
+    route: "Jalur Utama",
+    registrationFee: 250000,
+    fine: 0,
+    total: 250000,
+    status: "Pending",
+  },
+  {
+    id: "REG-1025",
+    groupName: "Lampung Hiking Club",
+    leader: "Siti Rahma",
+    route: "Jalur Pematang",
+    registrationFee: 250000,
+    fine: 50000,
+    total: 300000,
+    status: "Pending",
+  },
+  {
+    id: "REG-1026",
+    groupName: "Summit Team",
+    leader: "Bambang Kusuma",
+    route: "Jalur Canggung",
+    registrationFee: 250000,
+    fine: 0,
+    total: 250000,
+    status: "Paid",
+  },
+  {
+    id: "REG-1027",
+    groupName: "Mountain Explorers",
+    leader: "Dewi Sartika",
+    route: "Jalur Bukit",
+    registrationFee: 250000,
+    fine: 0,
+    total: 250000,
+    status: "Overdue",
+  }
+];
+
 // komponen PaymentTable untuk menampilkan tabel pembayaran
 export default function PaymentTable() {
     return (
