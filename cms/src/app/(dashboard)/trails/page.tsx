@@ -1,4 +1,6 @@
 import TrailGrid from "@/components/trails/trail-grid";
+import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
 
 // halaman untuk menampilkan daftar trail
 export default function TrailsPage() {
@@ -14,6 +16,11 @@ export default function TrailsPage() {
                         Manage hiking routes and operational status.
                     </p>
                 </section>
+                {/* add trail button */}
+                <Button className="bg-primary hover:bg-primary-light text-white">
+                    <Plus size={20} className="mr-2" />
+                    Add New Trail
+                </Button>
             </header>
             <TrailGrid />
         </main>
