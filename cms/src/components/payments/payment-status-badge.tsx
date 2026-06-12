@@ -8,20 +8,22 @@ interface Props {
 export default function PaymentStatusBadge({
     status,
 }: Props) {
+    const normalizedStatus = status.toLowerCase();
+
     // menentukan warna badge berdasarkan status pembayaran
-    if (status === "paid") {
+    if (normalizedStatus === "paid") {
         return (
             <Badge className="bg-green-100 text-green-800">
                 Paid
             </Badge>
         );
-    } else if (status === "pending") {
+    } else if (normalizedStatus === "pending") {
         return (
             <Badge className="bg-yellow-100 text-yellow-800">
                 Pending
             </Badge>
         );
-    } else if (status === "overdue") {
+    } else if (normalizedStatus === "overdue") {
         return (
             <Badge className="bg-red-100 text-red-800">
                 Overdue

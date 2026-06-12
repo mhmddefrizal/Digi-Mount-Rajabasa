@@ -1,3 +1,5 @@
+"use client";
+
 import StatsCard from "@/components/dashboard/stats-card";
 
 // fungsi untuk menampilkan statistik pendaftaran

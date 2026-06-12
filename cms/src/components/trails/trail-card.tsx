@@ -1,5 +1,9 @@
+"use client";
+
 // import packages gambar 
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 // import components kartu
 import { Card, CardContent } from "../ui/card";
@@ -7,6 +11,7 @@ import { Card, CardContent } from "../ui/card";
 // import komponen badge, switch, dan ikon
 import { Badge } from "../ui/badge";
 import { Switch } from "../ui/switch";
+import { Button } from "../ui/button";
 import { MapPin, Pencil, Trash2 } from "lucide-react";
 
 // definisikan tipe data untuk trail (sementara menggunakan tipe data statis, bisa disesuaikan dengan data yang sebenarnya)
@@ -26,6 +31,21 @@ interface Props {
 
 // komponen TrailCard untuk menampilkan informasi trail
 export default function TrailCard({ trail }: Props) {
+    const [isOpen, setIsOpen] = useState(trail.status);
+    const [isDeleted, setIsDeleted] = useState(false);
+
+    if (isDeleted) {
+      return null;
+    }
+
+    const handleDelete = () => {
+      const confirmed = window.confirm(`Delete ${trail.name}?`);
+
+      if (confirmed) {
+        setIsDeleted(true);
+      }
+    };
+
     return (
         // gunakan elemen article untuk membungkus kartu trail
         <article>
@@ -63,19 +83,21 @@ export default function TrailCard({ trail }: Props) {
                                 Status:
                             </span>
                             {/* Switch untuk mengubah status trail */}
-                            <Switch checked={trail.status} />
-                            <span className= {trail.status ? "text-primary text-sm font-medium" : "text-text-muted text-sm"}>
-                                {trail.status ? "Open" : "Closed"}
+                            <Switch checked={isOpen} onCheckedChange={(value) => setIsOpen(value === true)} />
+                            <span className={isOpen ? "text-primary text-sm font-medium" : "text-text-muted text-sm"}>
+                                {isOpen ? "Open" : "Closed"}
                             </span>
                         </div>
                         <div className="flex gap-3">
                             {/* Tombol edit dan hapus dengan ikon */}
-                            <button className="text-primary hover:text-primary/80">
-                                <Pencil size={16} />
-                            </button>
-                            <button className="text-destructive hover:text-destructive/80">
+                            <Button asChild variant="ghost" size="icon-sm" className="text-primary hover:text-primary/80">
+                                <Link href={`/trails/new?trail=${trail.id}`} aria-label={`Edit ${trail.name}`}>
+                                    <Pencil size={16} />
+                                </Link>
+                            </Button>
+                            <Button type="button" variant="ghost" size="icon-sm" className="text-destructive hover:text-destructive/80" onClick={handleDelete} aria-label={`Delete ${trail.name}`}>
                                 <Trash2 size={16} />
-                            </button>
+                            </Button>
                         </div>
                     </footer>
                 </CardContent>

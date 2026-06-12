@@ -4,9 +4,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { PaymentDetail } from "@/lib/mock-data";
 
 // komponen kartu informasi pelanggan
-export default function CustomerInformationCard() {
+interface Props {
+  payment: PaymentDetail;
+}
+
+export default function CustomerInformationCard({ payment }: Props) {
   return (
     // gunakan elemen article untuk membungkus kartu informasi pelanggan
     <Card>
@@ -23,8 +28,7 @@ export default function CustomerInformationCard() {
                         LEADER NAME
                     </dt>
                     <dd className="font-semibold">
-                        {/* nama ketua (dummy) */}
-                        Bambang Wijaya
+                        {payment.leader}
                     </dd>
                 </div>
                 {/* informasi nomor telepon */}
@@ -33,8 +37,7 @@ export default function CustomerInformationCard() {
                         PHONE NUMBER
                     </dt>
                     <dd className="font-semibold">
-                        {/* nomor telepon (dummy) */}
-                        +62 812-3456-7890
+                        {payment.phone}
                     </dd>
                 </div>
                 <div>
@@ -42,8 +45,7 @@ export default function CustomerInformationCard() {
                         NIK
                     </dt>
                     <dd className="font-semibold">
-                        {/* NIK (dummy) */}
-                        1234567890123456
+                        {payment.nik}
                     </dd>
                 </div>
                 <div>
@@ -51,8 +53,7 @@ export default function CustomerInformationCard() {
                         EMAIL
                     </dt>
                     <dd className="font-semibold">
-                        {/* email (dummy) */}
-                        bambang.wijaya@example.com
+                        {payment.email}
                     </dd>
                 </div>
                 <div>
@@ -60,8 +61,7 @@ export default function CustomerInformationCard() {
                         PAYMENT METHOD
                     </dt>
                     <dd className="font-semibold">
-                        {/* metode pembayaran (dummy) */}
-                        Bank Transfer
+                        {payment.paymentMethod}
                     </dd>
                 </div>
             </dl>

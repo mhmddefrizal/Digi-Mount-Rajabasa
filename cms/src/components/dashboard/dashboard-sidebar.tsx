@@ -63,15 +63,31 @@ export default function DashboardSidebar() {
         })}
 
         {/* payment */}
-        <button className="w-full flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-text-secondary transition hover:bg-primary-dim/60 hover:text-primary">
+        <Link
+          href="/payments"
+          className={cn(
+            "w-full flex items-center gap-3 rounded-lg px-4 py-3 font-medium transition",
+            pathname.startsWith("/payments")
+              ? "bg-primary-dim text-primary"
+              : "text-text-secondary hover:bg-primary-dim/60 hover:text-primary"
+          )}
+        >
           <CreditCard className="w-5 h-5" />
           Payment
-        </button>
+        </Link>
         {/* Trail Management */}
-        <button className="w-full flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-text-secondary transition hover:bg-primary-dim/60 hover:text-primary">
+        <Link
+          href="/trails"
+          className={cn(
+            "w-full flex items-center gap-3 rounded-lg px-4 py-3 font-medium transition",
+            pathname.startsWith("/trails")
+              ? "bg-primary-dim text-primary"
+              : "text-text-secondary hover:bg-primary-dim/60 hover:text-primary"
+          )}
+        >
           <Map className="w-5 h-5" />
           Trail Management
-        </button>
+        </Link>
       </nav>
     </aside>
   );

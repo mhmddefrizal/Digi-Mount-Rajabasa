@@ -1,3 +1,5 @@
+"use client";
+
 import StatsCard from "../dashboard/stats-card";
 
 // komponen PaymentStats untuk menampilkan statistik pembayaran
