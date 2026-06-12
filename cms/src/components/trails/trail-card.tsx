@@ -26,5 +26,14 @@ interface Props {
 
 // komponen TrailCard untuk menampilkan informasi trail
 export default function TrailCard({ trail }: Props) {
-    return ()
+    return (
+        // gunakan elemen article untuk membungkus kartu trail
+        <article>
+            <Card className="overflow-hidden">
+                <div className="relative h-44">
+
+                </div>
+            </Card>
+        </article>
+    )
 }
