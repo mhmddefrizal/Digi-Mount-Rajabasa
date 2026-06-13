@@ -19,6 +19,12 @@ export class PendaftaranService {
         totalBiaya,
       },
     });
+
+    return {
+      success: true,
+      message: 'Pendaftaran berhasil dibuat',
+      data: result,
+    };
   }
 
   findAll() {
