@@ -21,6 +21,12 @@ export interface PendaftaranResponse {
   message?: string;
   data: Pendaftaran;
 }
+
+export interface PendaftaranListResponse {
+  success: boolean;
+  total: number;
+  data: Pendaftaran[];
+}
 @Injectable()
 export class PendaftaranService {
   async create(createPendaftaranDto: CreatePendaftaranDto) {
