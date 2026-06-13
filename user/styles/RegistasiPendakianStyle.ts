@@ -98,4 +98,30 @@ export default StyleSheet.create({
     color: "gray",
     fontSize: 12,
   },
-  
+  typeRow: {
+    flexDirection: "row",
+    marginTop: 10,
+    gap: 10,
+  },
+
+  activeType: {
+    flex: 1,
+    backgroundColor: "#B9E3C6",
+    borderRadius: 10,
+    padding: 12,
+    alignItems: "center",
+  },
+
+  activeTypeText: {
+    color: "#1F3D36",
+    fontWeight: "700",
+  },
+
+  typeButton: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: "#DDD",
+    borderRadius: 10,
+    padding: 12,
+    alignItems: "center",
+  },
