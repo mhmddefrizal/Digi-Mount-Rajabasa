@@ -36,4 +36,14 @@ export default function RegistrasiPendakian() {
           Informasi Dasar
         </Text>
       </View>
+      {/* Banner */}
+      <View style={styles.banner}>
+        <Text style={styles.bannerTitle}>
+          Registrasi Pendakian
+        </Text>
+
+        <Text style={styles.bannerDesc}>
+          Lengkapi data perjalanan Anda untuk izin masuk kawasan.
+        </Text>
+      </View>
 }
