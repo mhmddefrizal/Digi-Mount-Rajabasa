@@ -59,5 +59,32 @@ export default function AnggotaKelompok() {
           <View style={styles.progressFill} />
         </View>
       </View>
+      {/* Banner */}
+      <View style={styles.banner}>
+        <Ionicons
+          name="people-outline"
+          size={28}
+          color="#FFF"
+        />
+
+        <Text style={styles.bannerText}>
+          Pastikan data setiap anggota sesuai
+          dengan identitas resmi (KTP/SIM).
+        </Text>
+      </View>
+
+      {/* Card */}
+      <View style={styles.card}>
+        <View style={styles.memberHeader}>
+          <Text style={styles.memberTitle}>
+            Anggota #1 (Ketua)
+          </Text>
+
+          <Ionicons
+            name="shield-checkmark-outline"
+            size={18}
+            color="#1F3D36"
+          />
+        </View>
   );
 }
