@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-  
+
 export default function Login() {
   const router = useRouter();
   //state untuk menyimpan username
@@ -20,17 +20,12 @@ export default function Login() {
         <Text style={styles.headerTitle}>Digi-Mount Rajabasa</Text>
       </View>
       {/* Logo */}
-      <Image
-  source={require("../../assets/images/Logo_Gunung.png")}
-  style={styles.logo}
-  resizeMode="contain"
-/>
+      <Image source={require("../../assets/images/Logo_Gunung.png")} style={styles.logo} resizeMode="contain" />
       {/* Selamat datang */}
       <Text style={styles.subtitle}>Selamat Datang</Text>
       <Text style={styles.subtitle}>Masuk untuk memulai petualangan Anda di Gunung Rajabasa.</Text>
 
       <View style={styles.loginBox}>
-
         {/* Email */}
         <Text style={styles.label}>Alamat Email</Text>
         <View style={styles.inputContainer}>
@@ -44,9 +39,21 @@ export default function Login() {
           <TextInput placeholder="••••••••" secureTextEntry value={password} onChangeText={setPassword} style={styles.input} />
           <Ionicons name="lock-closed-outline" size={20} color="gray" />
         </View>
-        <TouchableOpacity style={styles.loginButton}>
-          <Text style={styles.loginButtonText}>Login</Text>
-        </TouchableOpacity>
+       <TouchableOpacity
+  style={styles.loginButton}
+  onPress={() => {
+    if (!email || !password) {
+      alert("Email dan password harus diisi");
+      return;
+    }
+
+    router.push("/(home)/home");
+  }}
+>
+  <Text style={styles.loginButtonText}>
+    Login
+  </Text>
+</TouchableOpacity>
         {/* Lupa Password */}
         <TouchableOpacity>
           <Text style={styles.forgot}>Lupa kata sandi?</Text>
@@ -60,14 +67,11 @@ export default function Login() {
       </View>
       {/* Register */}
       <Text style={styles.register}>
-  Belum punya akun?{" "}
-  <Text
-    style={styles.registerBold}
-    onPress={() => router.push("/(auth)/register")}
-  >
-    Daftar Sekarang
-  </Text>
-</Text>
+        Belum punya akun?{" "}
+        <Text style={styles.registerBold} onPress={() => router.push("/(auth)/register")}>
+          Daftar Sekarang
+        </Text>
+      </Text>
     </View>
   );
 }
