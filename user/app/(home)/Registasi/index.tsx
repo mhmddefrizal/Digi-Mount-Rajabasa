@@ -111,4 +111,16 @@ export default function RegistrasiPendakian() {
             <Text>Tektok</Text>
           </TouchableOpacity>
         </View>
+         {/* Warning */}
+        <View style={styles.warningBox}>
+          <Ionicons
+            name="warning-outline"
+            size={18}
+            color="#E67E22"
+          />
+
+          <Text style={styles.warningText}>
+            Peringatan: Tektok tidak diperbolehkan setelah jam 12 siang demi keselamatan pendaki.
+          </Text>
+        </View>
 }
