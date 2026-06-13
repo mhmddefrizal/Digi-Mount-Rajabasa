@@ -52,8 +52,25 @@ export class PendaftaranService {
     };
   }
 
-  update(id: number, updatePendaftaranDto: UpdatePendaftaranDto) {
-    return `This action updates a #${id} pendaftaran`;
+  async update(id: string, data: UpdatePendaftaranDto) {
+    const existing = await this.prisma.pendaftaran.findUnique({
+      where: { id },
+    });
+
+    if (!existing) {
+      throw new NotFoundException('Data pendaftaran tidak ditemukan');
+    }
+
+    const result = await this.prisma.pendaftaran.update({
+      where: { id },
+      data,
+    });
+
+    return {
+      success: true,
+      message: 'Pendaftaran berhasil diperbarui',
+      data: result,
+    };
   }
 
   remove(id: number) {
