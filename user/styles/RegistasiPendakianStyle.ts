@@ -84,9 +84,11 @@ export default StyleSheet.create({
 
   routeCard: {
     flex: 1,
-    backgroundColor: "#F8F8F8",
-    borderRadius: 12,
-    padding: 12,
+  backgroundColor: "#FFFFFF",
+  borderRadius: 12,
+  padding: 16,
+  marginHorizontal: 5,
+  position: "relative",
   },
 
   routeTitle: {
