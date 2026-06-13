@@ -29,8 +29,13 @@ export interface PendaftaranListResponse {
 }
 @Injectable()
 export class PendaftaranService {
-  async create(createPendaftaranDto: CreatePendaftaranDto) {
-    const response = await pendaftaran_api.post('/', createPendaftaranDto);
+  async create(
+    createPendaftaranDto: CreatePendaftaranDto,
+  ): Promise<PendaftaranResponse> {
+    const response = await pendaftaran_api.post<PendaftaranResponse>(
+      '/',
+      createPendaftaranDto,
+    );
 
     return response.data;
   }
