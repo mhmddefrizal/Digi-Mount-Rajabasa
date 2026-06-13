@@ -12,6 +12,13 @@ export class PendaftaranService {
     // return 'This action adds a new pendaftaran';
 
     const totalBiaya = data.jumlahAnggota * 20000 + data.jumlahMotor * 5000;
+
+    const result = await this.prisma.pendaftaran.create({
+      data: {
+        ...data,
+        totalBiaya,
+      },
+    });
   }
 
   findAll() {
