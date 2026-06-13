@@ -139,3 +139,16 @@ export default StyleSheet.create({
     color: "#A85A14",
     fontSize: 12,
   },
+  nextButton: {
+    backgroundColor: "#1F3D36",
+    marginTop: 20,
+    padding: 15,
+    borderRadius: 12,
+    alignItems: "center",
+  },
+
+  nextText: {
+    color: "white",
+    fontWeight: "700",
+  },
+});
