@@ -37,5 +37,27 @@ export default function AnggotaKelompok() {
           Digi-Mount Rajabasa
         </Text>
       </View>
+       {/* Step */}
+      <View style={styles.stepContainer}>
+        <Text style={styles.stepLabel}>
+          PENDAFTARAN
+        </Text>
+
+        <View style={styles.stepRow}>
+          <Text style={styles.pageTitle}>
+            Anggota Kelompok
+          </Text>
+
+          <View style={styles.stepBadge}>
+            <Text style={styles.stepBadgeText}>
+              Step 2/5
+            </Text>
+          </View>
+        </View>
+
+        <View style={styles.progressBar}>
+          <View style={styles.progressFill} />
+        </View>
+      </View>
   );
 }
