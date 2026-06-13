@@ -20,3 +20,34 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#1F3D36",
   },
+  stepContainer: {
+    padding: 16,
+  },
+
+  stepLabel: {
+    fontSize: 12,
+    color: "#777",
+  },
+
+  stepRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+
+  pageTitle: {
+    fontSize: 26,
+    fontWeight: "bold",
+    color: "#1F3D36",
+  },
+
+  stepBadge: {
+    backgroundColor: "#CDEBCF",
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 20,
+  },
+  stepBadgeText: {
+    color: "#1F3D36",
+    fontWeight: "600",
+  },
