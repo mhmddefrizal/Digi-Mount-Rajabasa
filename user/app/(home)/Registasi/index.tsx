@@ -46,4 +46,24 @@ export default function RegistrasiPendakian() {
           Lengkapi data perjalanan Anda untuk izin masuk kawasan.
         </Text>
       </View>
+       {/* Form */}
+      <View style={styles.card}>
+
+        <Text style={styles.label}>
+          Tanggal Pendakian
+        </Text>
+
+        <View style={styles.inputContainer}>
+          <Ionicons
+            name="calendar-outline"
+            size={18}
+            color="#1F3D36"
+          />
+           <TextInput
+            placeholder="dd/mm/yyyy"
+            value={tanggal}
+            onChangeText={setTanggal}
+            style={styles.input}
+          />
+        </View>
 }
