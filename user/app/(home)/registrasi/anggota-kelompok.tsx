@@ -21,5 +21,21 @@ export default function AnggotaKelompok() {
   const [headlamp, setHeadlamp] = useState(false);
   const [jasHujan, setJasHujan] = useState(false);
 
-  return ();
+  return (
+     <ScrollView style={styles.container}>
+      {/* Header */}
+      <View style={styles.header}>
+        <TouchableOpacity onPress={() => router.back()}>
+          <Ionicons
+            name="arrow-back"
+            size={22}
+            color="#1F3D36"
+          />
+        </TouchableOpacity>
+
+        <Text style={styles.headerTitle}>
+          Digi-Mount Rajabasa
+        </Text>
+      </View>
+  );
 }
