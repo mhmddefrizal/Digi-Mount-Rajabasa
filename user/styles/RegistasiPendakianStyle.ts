@@ -50,3 +50,30 @@ export default StyleSheet.create({
     color: "white",
     marginTop: 8,
   },
+  card: {
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: 15,
+    marginTop: 15,
+  },
+
+  label: {
+    marginTop: 10,
+    marginBottom: 8,
+    fontWeight: "600",
+    color: "#1F3D36",
+  },
+
+  inputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderWidth: 1,
+    borderColor: "#DDD",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+  },
+
+  input: {
+    flex: 1,
+    padding: 12,
+  },
