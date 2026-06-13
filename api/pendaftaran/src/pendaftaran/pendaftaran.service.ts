@@ -73,7 +73,23 @@ export class PendaftaranService {
     };
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} pendaftaran`;
+  async remove(id: string) {
+    const existing = await this.prisma.pendaftaran.findUnique({
+      where: { id },
+    });
+
+    if (!existing) {
+      throw new NotFoundException('Data pendaftaran tidak ditemukan');
+    }
+
+    const result = await this.prisma.pendaftaran.delete({
+      where: { id },
+    });
+
+    return {
+      success: true,
+      message: 'Pendaftaran berhasil dihapus',
+      data: result,
+    };
   }
 }
