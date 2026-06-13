@@ -96,3 +96,33 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "600",
   },
+  label: {
+    marginBottom: 8,
+    fontWeight: "500",
+    color: "#333",
+  },
+
+  input: {
+    backgroundColor: "#F2F2F2",
+    borderRadius: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    marginBottom: 16,
+  },
+
+  equipmentRow: {
+    flexDirection: "row",
+    gap: 10,
+  },
+
+  equipmentButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#F4F4F4",
+    padding: 12,
+    borderRadius: 10,
+  },
+
+  equipmentText: {
+    marginLeft: 8,
+  },
