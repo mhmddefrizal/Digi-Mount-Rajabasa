@@ -51,3 +51,16 @@ const styles = StyleSheet.create({
     color: "#1F3D36",
     fontWeight: "600",
   },
+  progressBar: {
+    height: 6,
+    backgroundColor: "#DDD",
+    borderRadius: 20,
+    marginTop: 12,
+  },
+
+  progressFill: {
+    width: "40%",
+    height: "100%",
+    backgroundColor: "#1F3D36",
+    borderRadius: 20,
+  },
