@@ -12,3 +12,24 @@ export default StyleSheet.create({
     alignItems: "center",
     marginTop: 40,
   },
+   headerTitle: {
+    marginLeft: 10,
+    color: "#1F3D36",
+    fontWeight: "700",
+  },
+
+  stepRow: {
+    marginTop: 20,
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+
+  stepText: {
+    color: "#D67E3B",
+    fontWeight: "600",
+  },
+
+  stepTitle: {
+    color: "#1F3D36",
+    fontWeight: "700",
+  },
