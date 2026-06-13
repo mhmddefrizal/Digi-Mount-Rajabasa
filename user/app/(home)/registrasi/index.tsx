@@ -110,8 +110,8 @@ export default function RegistrasiPendakian() {
           <Text style={styles.warningText}>Peringatan: Tektok tidak diperbolehkan setelah jam 12 siang demi keselamatan pendaki.</Text>
         </View>
         {/* Next Button */}
-        <TouchableOpacity style={styles.nextButton}>
-          <Text style={styles.nextText}>Lanjut ke Detail Kelompok →</Text>
+        <TouchableOpacity style={styles.nextButton} onPress={() => router.push("/registrasi/anggota-kelompok")}>
+          <Text style={styles.nextButtonText}>Lanjut ke Anggota Kelompok</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
