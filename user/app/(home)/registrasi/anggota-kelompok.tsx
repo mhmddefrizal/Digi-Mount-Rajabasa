@@ -171,5 +171,27 @@ export default function AnggotaKelompok() {
           </TouchableOpacity>
         </View>
       </View>
+      {/* Tambah Anggota */}
+      <TouchableOpacity style={styles.addButton}>
+        <Ionicons
+          name="person-add-outline"
+          size={20}
+          color="#1F3D36"
+        />
+
+        <Text style={styles.addButtonText}>
+          Tambah Anggota
+        </Text>
+      </TouchableOpacity>
+
+      {/* Next */}
+      <TouchableOpacity
+        style={styles.nextButton}
+      >
+        <Text style={styles.nextButtonText}>
+          Lanjutkan ke Langkah 3
+        </Text>
+      </TouchableOpacity>
+    </ScrollView>
   );
 }
