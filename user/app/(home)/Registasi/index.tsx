@@ -95,4 +95,20 @@ export default function RegistrasiPendakian() {
             </Text>
           </TouchableOpacity>
         </View>
+        {/* Jenis Pendakian */}
+        <Text style={styles.label}>
+          Jenis Pendakian
+        </Text>
+
+        <View style={styles.typeRow}>
+          <TouchableOpacity style={styles.activeType}>
+            <Text style={styles.activeTypeText}>
+              Camping
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.typeButton}>
+            <Text>Tektok</Text>
+          </TouchableOpacity>
+        </View>
 }
