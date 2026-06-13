@@ -26,4 +26,14 @@ export default function RegistrasiPendakian() {
           Digi-Mount Rajabasa
         </Text>
       </View>
+       {/* Step */}
+      <View style={styles.stepRow}>
+        <Text style={styles.stepText}>
+          Step 1 dari 5
+        </Text>
+
+        <Text style={styles.stepTitle}>
+          Informasi Dasar
+        </Text>
+      </View>
 }
