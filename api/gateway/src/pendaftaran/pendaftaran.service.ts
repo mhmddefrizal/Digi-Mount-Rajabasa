@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { pendaftaran_api } from '../common/instances/pendaftaran.instance';
 import { CreatePendaftaranDto } from './dto/create-pendaftaran.dto';
+import { UpdatePendaftaranDto } from './dto/update-pendaftaran.dto';
 
 export interface Pendaftaran {
   id: string;
@@ -48,6 +49,18 @@ export class PendaftaranService {
 
   async findOne(id: string): Promise<PendaftaranResponse> {
     const response = await pendaftaran_api.get<PendaftaranResponse>(`/${id}`);
+
+    return response.data;
+  }
+
+  async update(
+    id: string,
+    updatePendaftaranDto: UpdatePendaftaranDto,
+  ): Promise<PendaftaranResponse> {
+    const response = await pendaftaran_api.patch<PendaftaranResponse>(
+      `/${id}`,
+      updatePendaftaranDto,
+    );
 
     return response.data;
   }
