@@ -125,3 +125,17 @@ export default StyleSheet.create({
     padding: 12,
     alignItems: "center",
   },
+   warningBox: {
+    marginTop: 15,
+    backgroundColor: "#FFF1E5",
+    padding: 12,
+    borderRadius: 10,
+    flexDirection: "row",
+  },
+
+  warningText: {
+    flex: 1,
+    marginLeft: 10,
+    color: "#A85A14",
+    fontSize: 12,
+  },
