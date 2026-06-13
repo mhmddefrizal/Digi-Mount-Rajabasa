@@ -9,10 +9,13 @@ import {
 import Ionicons from "@expo/vector-icons/Ionicons";
 import styles from "../../../styles/RegistasiPendakianStyle";
 import { useRouter } from "expo-router";
+import DateTimePicker from "@react-native-community/datetimepicker";
 
 export default function RegistrasiPendakian() {
   const [tanggal, setTanggal] = useState("");
   const router = useRouter();
+  const [date, setDate] = useState(new Date());
+const [showPicker, setShowPicker] = useState(false);
 
   return (
     <ScrollView style={styles.container}>
@@ -57,18 +60,51 @@ export default function RegistrasiPendakian() {
         </Text>
 
         <View style={styles.inputContainer}>
-          <Ionicons
-            name="calendar-outline"
-            size={18}
-            color="#1F3D36"
-          />
-           <TextInput
-            placeholder="dd/mm/yyyy"
-            value={tanggal}
-            onChangeText={setTanggal}
-            style={styles.input}
-          />
-        </View>
+  <Ionicons
+    name="calendar-outline"
+    size={18}
+    color="#1F3D36"
+  />
+
+  <TouchableOpacity
+    style={{ flex: 1 }}
+    onPress={() => setShowPicker(true)}
+  >
+    <Text
+      style={{
+        paddingVertical: 12,
+        marginLeft: 10,
+      }}
+    >
+      {tanggal || "Pilih tanggal pendakian"}
+    </Text>
+  </TouchableOpacity>
+</View>
+{showPicker && (
+  <DateTimePicker
+    value={date}
+    mode="date"
+    display="default"
+    onChange={(event, selectedDate) => {
+      setShowPicker(false);
+
+      if (selectedDate) {
+        setDate(selectedDate);
+
+        const formatted =
+          selectedDate.getDate().toString().padStart(2, "0") +
+          "/" +
+          (selectedDate.getMonth() + 1)
+            .toString()
+            .padStart(2, "0") +
+          "/" +
+          selectedDate.getFullYear();
+
+        setTanggal(formatted);
+      }
+    }}
+  />
+)}
          {/* Pilih Jalur */}
         <Text style={styles.label}>
           Pilih Jalur
