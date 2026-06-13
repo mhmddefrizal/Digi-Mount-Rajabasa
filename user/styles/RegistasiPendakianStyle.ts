@@ -33,3 +33,20 @@ export default StyleSheet.create({
     color: "#1F3D36",
     fontWeight: "700",
   },
+   banner: {
+    backgroundColor: "#2F5D50",
+    borderRadius: 16,
+    padding: 20,
+    marginTop: 15,
+  },
+
+  bannerTitle: {
+    color: "white",
+    fontSize: 20,
+    fontWeight: "700",
+  },
+
+  bannerDesc: {
+    color: "white",
+    marginTop: 8,
+  },
