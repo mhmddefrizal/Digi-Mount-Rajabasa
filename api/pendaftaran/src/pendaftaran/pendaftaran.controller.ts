@@ -1,9 +1,20 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  UseGuards,
+} from '@nestjs/common';
 import { PendaftaranService } from './pendaftaran.service';
 import { CreatePendaftaranDto } from './dto/create-pendaftaran.dto';
 import { UpdatePendaftaranDto } from './dto/update-pendaftaran.dto';
+import { InternalGuard } from '../internal.guard';
 
 @Controller('pendaftaran')
+@UseGuards(InternalGuard)
 export class PendaftaranController {
   constructor(private readonly pendaftaranService: PendaftaranService) {}
 
@@ -23,7 +34,10 @@ export class PendaftaranController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updatePendaftaranDto: UpdatePendaftaranDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updatePendaftaranDto: UpdatePendaftaranDto,
+  ) {
     return this.pendaftaranService.update(+id, updatePendaftaranDto);
   }
 
