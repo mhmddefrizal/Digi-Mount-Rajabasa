@@ -122,5 +122,54 @@ export default function AnggotaKelompok() {
           value={telepon}
           onChangeText={setTelepon}
         />
+        {/* Perlengkapan */}
+        <Text style={styles.label}>
+          Perlengkapan Wajib
+        </Text>
+
+        <View style={styles.equipmentRow}>
+          <TouchableOpacity
+            style={styles.equipmentButton}
+            onPress={() =>
+              setHeadlamp(!headlamp)
+            }
+          >
+            <Ionicons
+              name={
+                headlamp
+                  ? "checkbox"
+                  : "square-outline"
+              }
+              size={20}
+              color="#1F3D36"
+            />
+
+            <Text style={styles.equipmentText}>
+              Headlamp
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.equipmentButton}
+            onPress={() =>
+              setJasHujan(!jasHujan)
+            }
+          >
+            <Ionicons
+              name={
+                jasHujan
+                  ? "checkbox"
+                  : "square-outline"
+              }
+              size={20}
+              color="#1F3D36"
+            />
+
+            <Text style={styles.equipmentText}>
+              Jas Hujan
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
   );
 }
