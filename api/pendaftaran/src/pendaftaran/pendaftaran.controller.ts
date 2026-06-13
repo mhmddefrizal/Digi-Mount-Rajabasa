@@ -30,7 +30,7 @@ export class PendaftaranController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.pendaftaranService.findOne(+id);
+    return this.pendaftaranService.findOne(id);
   }
 
   @Patch(':id')
@@ -38,11 +38,11 @@ export class PendaftaranController {
     @Param('id') id: string,
     @Body() updatePendaftaranDto: UpdatePendaftaranDto,
   ) {
-    return this.pendaftaranService.update(+id, updatePendaftaranDto);
+    return this.pendaftaranService.update(id, updatePendaftaranDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.pendaftaranService.remove(+id);
+    return this.pendaftaranService.remove(id);
   }
 }
