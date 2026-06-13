@@ -8,8 +8,10 @@ export class PendaftaranService {
   // buat constructor untuk inject prisma service
   constructor(private readonly prisma: PrismaService) {}
 
-  create(createPendaftaranDto: CreatePendaftaranDto) {
-    return 'This action adds a new pendaftaran';
+  async create(data: CreatePendaftaranDto) {
+    // return 'This action adds a new pendaftaran';
+
+    const totalBiaya = data.jumlahAnggota * 20000 + data.jumlahMotor * 5000;
   }
 
   findAll() {
