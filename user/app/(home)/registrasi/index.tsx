@@ -7,11 +7,14 @@ import {
   ScrollView,
 } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import styles from "@/styles/RegistrasiPendakianStyle";
+import styles from "../../../styles/RegistasiPendakianStyle";
+import { useRouter } from "expo-router";
 
 export default function RegistrasiPendakian() {
   const [tanggal, setTanggal] = useState("");
-   return (
+  const router = useRouter();
+
+  return (
     <ScrollView style={styles.container}>
       
       {/* Header */}
