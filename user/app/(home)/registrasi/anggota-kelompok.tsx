@@ -9,7 +9,7 @@ import {
 
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { useRouter } from "expo-router";
-import styles from "@/styles/AnggotaKelompokStyle";
+import styles from "../../../styles/AnggotaKelompokStyle";
 
 export default function AnggotaKelompok() {
   const router = useRouter();
