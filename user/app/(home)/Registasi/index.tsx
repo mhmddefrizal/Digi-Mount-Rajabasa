@@ -66,4 +66,33 @@ export default function RegistrasiPendakian() {
             style={styles.input}
           />
         </View>
+         {/* Pilih Jalur */}
+        <Text style={styles.label}>
+          Pilih Jalur
+        </Text>
+
+        <View style={styles.row}>
+          <TouchableOpacity style={styles.routeCard}>
+            <Text>⛰</Text>
+
+            <Text style={styles.routeTitle}>
+              Jalur Sumur
+            </Text>
+
+            <Text style={styles.routeDesc}>
+              Populer & Mudah
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.routeCard}>
+            <Text>🚶</Text>
+
+            <Text style={styles.routeTitle}>
+              Jalur Way Belerang
+            </Text>
+
+            <Text style={styles.routeDesc}>
+              Tantangan & Pemandangan
+            </Text>
+          </TouchableOpacity>
+        </View>
 }
