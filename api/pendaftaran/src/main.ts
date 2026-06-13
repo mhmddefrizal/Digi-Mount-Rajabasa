@@ -6,6 +6,12 @@ async function bootstrap() {
 
   // tambahkan prefix 'api'
   app.setGlobalPrefix('api');
-  await app.listen(process.env.PORT!, 'localhost');
+
+  const port = process.env.PORT || 3002;
+  await app.listen(port, 'localhost');
+
+  console.log(
+    `Service Pendaftaran sedang berjalan di: http://localhost:${port}/api`,
+  );
 }
 void bootstrap();
