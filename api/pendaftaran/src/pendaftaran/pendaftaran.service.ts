@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreatePendaftaranDto } from './dto/create-pendaftaran.dto';
 import { UpdatePendaftaranDto } from './dto/update-pendaftaran.dto';
 import { PrismaService } from '../prisma.service';
@@ -37,8 +37,19 @@ export class PendaftaranService {
     };
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} pendaftaran`;
+  async findOne(id: string) {
+    const data = await this.prisma.pendaftaran.findUnique({
+      where: { id },
+    });
+
+    if (!data) {
+      throw new NotFoundException('Data pendaftaran tidak ditemukan');
+    }
+
+    return {
+      success: true,
+      data,
+    };
   }
 
   update(id: number, updatePendaftaranDto: UpdatePendaftaranDto) {
