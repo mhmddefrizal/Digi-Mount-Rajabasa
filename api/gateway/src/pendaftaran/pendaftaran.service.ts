@@ -15,6 +15,12 @@ export interface Pendaftaran {
   jalurId: string;
   createdAt: Date;
 }
+
+export interface PendaftaranResponse {
+  success: boolean;
+  message?: string;
+  data: Pendaftaran;
+}
 @Injectable()
 export class PendaftaranService {
   async create(createPendaftaranDto: CreatePendaftaranDto) {
