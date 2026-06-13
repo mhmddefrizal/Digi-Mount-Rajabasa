@@ -45,4 +45,10 @@ export class PendaftaranService {
 
     return response.data;
   }
+
+  async findOne(id: string): Promise<PendaftaranResponse> {
+    const response = await pendaftaran_api.get<PendaftaranResponse>(`/${id}`);
+
+    return response.data;
+  }
 }
