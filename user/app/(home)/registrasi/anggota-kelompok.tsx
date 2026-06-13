@@ -110,5 +110,17 @@ export default function AnggotaKelompok() {
           value={nik}
           onChangeText={setNik}
         />
+        {/* Telepon */}
+        <Text style={styles.label}>
+          No. Telepon
+        </Text>
+
+        <TextInput
+          style={styles.input}
+          placeholder="0812xxxx"
+          keyboardType="phone-pad"
+          value={telepon}
+          onChangeText={setTelepon}
+        />
   );
 }
