@@ -77,3 +77,25 @@ export default StyleSheet.create({
     flex: 1,
     padding: 12,
   },
+  row: {
+    flexDirection: "row",
+    gap: 10,
+  },
+
+  routeCard: {
+    flex: 1,
+    backgroundColor: "#F8F8F8",
+    borderRadius: 12,
+    padding: 12,
+  },
+
+  routeTitle: {
+    fontWeight: "700",
+    marginTop: 5,
+  },
+
+  routeDesc: {
+    color: "gray",
+    fontSize: 12,
+  },
+  
