@@ -64,3 +64,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#1F3D36",
     borderRadius: 20,
   },
+  banner: {
+    backgroundColor: "#1F5B4A",
+    marginHorizontal: 16,
+    borderRadius: 16,
+    padding: 16,
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  bannerText: {
+    color: "#FFF",
+    marginLeft: 12,
+    flex: 1,
+    fontWeight: "600",
+  },
