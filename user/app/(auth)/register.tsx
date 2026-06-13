@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import styles from "@/styles/RegisterStyle";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { useRouter } from "expo-router";
+
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [nama, setNama] = useState("");
   const [agree, setAgree] = useState(false);
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
@@ -45,9 +48,16 @@ const Register = () => {
           <Text style={styles.checkboxText}>Saya menyetujui Syarat & Ketentuan serta kebijakan privasi</Text>
         </TouchableOpacity>
         {/* Button */}
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Daftar Sekarang →</Text>
-        </TouchableOpacity>
+        <TouchableOpacity
+  style={styles.button}
+  onPress={() => {
+    router.replace("/(home)/home");
+  }}
+>
+  <Text style={styles.buttonText}>
+    Daftar Sekarang →
+  </Text>
+</TouchableOpacity>
         {/* Login link */}
         <Text style={styles.loginText}>
           Sudah memiliki akun? <Text style={styles.loginBold}>Masuk di sini</Text>
