@@ -51,4 +51,12 @@ export class PendaftaranService {
 
     return response.data;
   }
+
+  async remove(id: string): Promise<PendaftaranResponse> {
+    const response = await pendaftaran_api.delete<PendaftaranResponse>(
+      `/${id}`,
+    );
+
+    return response.data;
+  }
 }
