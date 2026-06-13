@@ -126,3 +126,37 @@ const styles = StyleSheet.create({
   equipmentText: {
     marginLeft: 8,
   },
+  addButton: {
+    marginHorizontal: 16,
+    borderWidth: 1,
+    borderStyle: "dashed",
+    borderColor: "#AAA",
+    borderRadius: 12,
+    padding: 16,
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+
+  addButtonText: {
+    marginLeft: 8,
+    color: "#1F3D36",
+    fontWeight: "600",
+  },
+
+  nextButton: {
+    margin: 16,
+    backgroundColor: "#0E4D3A",
+    borderRadius: 12,
+    padding: 16,
+    alignItems: "center",
+  },
+
+  nextButtonText: {
+    color: "#FFF",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
+});
+
+export default styles;
