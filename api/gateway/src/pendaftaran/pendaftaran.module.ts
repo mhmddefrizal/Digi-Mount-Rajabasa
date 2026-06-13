@@ -4,6 +4,6 @@ import { PendaftaranService } from './pendaftaran.service';
 
 @Module({
   controllers: [PendaftaranController],
-  providers: [PendaftaranService]
+  providers: [PendaftaranService],
 })
 export class PendaftaranModule {}
