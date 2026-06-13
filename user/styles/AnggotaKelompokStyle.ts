@@ -79,3 +79,20 @@ const styles = StyleSheet.create({
     flex: 1,
     fontWeight: "600",
   },
+  card: {
+    backgroundColor: "#FFF",
+    margin: 16,
+    borderRadius: 16,
+    padding: 16,
+  },
+
+  memberHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 20,
+  },
+
+  memberTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+  },
