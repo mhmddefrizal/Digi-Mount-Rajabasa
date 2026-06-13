@@ -86,5 +86,29 @@ export default function AnggotaKelompok() {
             color="#1F3D36"
           />
         </View>
+        {/* Nama */}
+        <Text style={styles.label}>
+          Nama Lengkap
+        </Text>
+
+        <TextInput
+          style={styles.input}
+          placeholder="Contoh: Budi Santoso"
+          value={nama}
+          onChangeText={setNama}
+        />
+
+        {/* NIK */}
+        <Text style={styles.label}>
+          NIK (KTP)
+        </Text>
+
+        <TextInput
+          style={styles.input}
+          placeholder="16 digit nomor induk"
+          keyboardType="numeric"
+          value={nik}
+          onChangeText={setNik}
+        />
   );
 }
