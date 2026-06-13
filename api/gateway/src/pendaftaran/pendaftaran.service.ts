@@ -39,4 +39,10 @@ export class PendaftaranService {
 
     return response.data;
   }
+
+  async findAll(): Promise<PendaftaranListResponse> {
+    const response = await pendaftaran_api.get<PendaftaranListResponse>('/');
+
+    return response.data;
+  }
 }
