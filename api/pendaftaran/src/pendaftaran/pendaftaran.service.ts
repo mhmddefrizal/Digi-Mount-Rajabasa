@@ -27,8 +27,14 @@ export class PendaftaranService {
     };
   }
 
-  findAll() {
-    return `This action returns all pendaftaran`;
+  async findAll() {
+    const data = await this.prisma.pendaftaran.findMany();
+
+    return {
+      success: true,
+      total: data.length,
+      data,
+    };
   }
 
   findOne(id: number) {
