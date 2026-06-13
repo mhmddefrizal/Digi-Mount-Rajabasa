@@ -123,4 +123,15 @@ export default function RegistrasiPendakian() {
             Peringatan: Tektok tidak diperbolehkan setelah jam 12 siang demi keselamatan pendaki.
           </Text>
         </View>
+        {/* Next Button */}
+        <TouchableOpacity style={styles.nextButton}>
+          <Text style={styles.nextText}>
+            Lanjut ke Detail Kelompok →
+          </Text>
+        </TouchableOpacity>
+
+      </View>
+
+    </ScrollView>
+  );
 }
